@@ -1,0 +1,29 @@
+/* ---------기본 세팅--------- */
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:#222;
+}
+body{
+    font-family:'NanumSquare';
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* ---------폰트--------- */
+/* 박물관체 */
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 나눔스퀘어 */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');

@@ -1,0 +1,309 @@
+@media all and (min-width: 800px) and (max-width: 1200px) {
+  * {
+    font-family: "NanumSquare";
+  }
+  /* visual */
+  #visual {
+    width: 100%;
+    margin-top:70px;
+  }
+  #visual img {
+    width: 100%;
+  }
+  .hidetb {
+    display: none;
+  }
+  /* nav */
+  #nav2 {
+    width: 100%;
+    margin: 3% 0px 2%;
+  }
+  .navbar {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    align-items: center;
+
+    font-size: 20px;
+  }
+  .navbar strong {
+    font-size: 28px;
+    font-weight: 900;
+  }
+  .undergray {
+    border-bottom: 4px solid #ccc;
+    padding: 0px 5% 1% 0px;
+  }
+  .gnb {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  /* container */
+
+  /* con1 */
+  .con1 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    position: relative;
+  }
+  .coblue {
+    width: calc(100% / 2);
+    background-color: #113640;
+    color: white;
+
+    box-sizing: border-box;
+    padding: 2%;
+  }
+  .coblue a {
+    color: white;
+    font-family: "NanumSquareBold";
+  }
+  .titleNew {
+    margin: 5% 0% 0% 7%;
+  }
+  .titleBest {
+    margin-left: 25%;
+  }
+  .pdmenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .pdmenu1 {
+    margin: 7% 0%;
+  }
+  .pdmenu li {
+    font-size: 18px;
+    margin: 3% 0 2% 17%;
+  }
+  .con1 h2 {
+    font-size: 60px;
+    font-family: "NanumSquareExtraBold";
+    letter-spacing: -3px;
+    line-height: 70px;
+  }
+  .cogray h2 {
+    font-size: 70px;
+  }
+  .cogray {
+    width: calc(100% / 2);
+    background-color: #f0f0ee;
+    color: #113640;
+    text-align: right;
+
+    box-sizing: border-box;
+    padding: 5%;
+  }
+  .cogray h2 {
+    margin-right: 5%;
+  }
+  .pdmenu2 {
+    margin: 30% 6% 12% 0%;
+  }
+  .cogray a {
+    color: #113640;
+    font-family: "NanumSquareExtraBold";
+  }
+  .con1img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+  }
+  .con1img img {
+    width: 70%;
+  }
+
+  /* con2 */
+  .con2 {
+    width: 100%;
+    height: 450px;
+    background-color: #5e605f;
+    margin: 9% 0px;
+    position: relative;
+
+    background-image: url(/goods/img/common_back.png),
+      url(/goods/img/bgflower2.png);
+    background-repeat: no-repeat;
+    background-size: 50%, 30%;
+    background-position: -50px 230px, 100% -250%;
+  }
+  .pdimg {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 70px;
+    right: -80px;
+    z-index: 1;
+  }
+
+  .pdimg img {
+    width: 200px;
+    height: 270px;
+    object-fit: cover;
+  }
+  .outline {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 100px;
+    right: -110px;
+  }
+  .outline li {
+    width: 180px;
+    height: 260px;
+    border: 1px solid white;
+  }
+  .con2txt {
+    width: 60px;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 40px;
+    left: -20px;
+  }
+  .hoverB {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 70px;
+    right: -80px;
+    z-index: 10;
+
+    text-align: center;
+    line-height: 270px;
+  }
+  .hoverB a {
+    color: white;
+    font-size: 20px;
+  }
+  .hover1:hover {
+    opacity: 0.6;
+  }
+  .hover2:hover {
+    opacity: 0.6;
+  }
+  .hover3:hover {
+    opacity: 0.6;
+  }
+  .hover4:hover {
+    opacity: 0.6;
+  }
+  .hoverB li {
+    width: 200px;
+    height: 270px;
+    background-color: black;
+    opacity: 0;
+  }
+
+  /* con3 */
+  .con3 {
+    width: 100%;
+    height: 600px;
+    background-color: #eee;
+    padding-left: 6%;
+    position: relative;
+    overflow: hidden;
+  }
+  .con3 h3 {
+    color: #3d5960;
+    font-size: 25px;
+    font-family: "NanumSquareExtraBold";
+    padding-top: 120px;
+    letter-spacing: 1px;
+  }
+  .con3 h2 {
+    color: #3d5960;
+    font-family: "NanumSquareExtraBold";
+    font-size: 40px;
+    margin: 30px 0px 70px;
+    line-height: 55px;
+    letter-spacing: 2px;
+  }
+  .con3 p {
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  .moreB {
+    width: 120px;
+    margin: 40px 0px 0px 355px;
+    text-align: center;
+    padding: 5px 1px;
+    border-radius: 15px;
+    color: white;
+    background-color: #95acb2;
+  }
+  .con3Big {
+    width: 430px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(25%, -50%);
+    z-index: 1;
+  }
+  .lineC {
+    width: 650px;
+    height: 650px;
+    border-radius: 100%;
+    border: 1px solid #3d5960;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(47%, -50%);
+  }
+
+  /* con4 */
+  .con4 {
+    width: 750px;
+    height: 320px;
+    background-color: #ccc;
+    margin: 100px auto;
+    display: flex;
+  }
+  .con4 li {
+    width: calc(100% / 2);
+    height: 100%;
+  }
+  .con4 img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
+  .con4 h2 {
+    margin: 45px 0px 25px;
+    font-weight: border;
+    color: #113640;
+  }
+  .con4 p {
+    margin-bottom: 20px;
+    line-height: 25px;
+    color: #5e605f;
+  }
+  .loca {
+    margin: 15px 0px 20px;
+  }
+  .locabutton {
+    font-size: 14px;
+    font-weight: 500;
+    width: 100px;
+    padding: 6px 0px;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .locabutton a {
+    padding: 6px 11px;
+  }
+  .locatxt {
+    margin-left: 4%;
+  }
+}

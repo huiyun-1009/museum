@@ -1,0 +1,816 @@
+/*______________pc버전______________*/
+
+@media(min-width:1200px){
+
+/*_________비쥬얼__________*/
+
+#visual{
+    width:100%s;
+    height:400px;
+    margin-top:70px;
+    background-image:url(/img/common_visual.png);
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+#visual h1{
+    color:#fff;
+    font-size:75px;
+    text-align:center;
+    padding-top:100px;
+    font-family: '국립박물관문화재단클래식B';
+}
+#visual h2{
+    color:#fff;
+    font-size:25px;
+    text-align:center;
+    font-family: 'NanumSquare';
+    padding-top:10px;
+}
+
+/*______________콘1_________________*/
+
+#content{
+    width:1200px;
+    margin:0px auto;
+    padding:50px 0px;
+    background-image: url(/img/common_back.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+}
+#content h3{
+    font-size: 50px;
+    font-family: '국립박물관문화재단클래식B';
+    color:#113640;
+    padding:20px 0px;
+    border-bottom:1px solid #113640;
+    margin-bottom:30px;
+}
+#content li img{
+    width:400px;
+}
+#content .con1_1{
+    font-size: 20px;
+    font-family: 'NanumSquare';
+
+}
+#content ul{
+    display:flex;
+    justify-content: space-between;
+}
+
+/*_______________콘2_______________*/
+
+#content2{
+    width:1200px;
+    margin:0px auto;
+    padding:10px 0px;
+}
+#content2 h3{
+    font-size: 50px;
+    font-family: '국립박물관문화재단클래식B';
+    color:#113640;
+    padding:20px 0px;
+    border-bottom:1px solid #113640;
+    margin-bottom:80px;
+}
+#content2 ul{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#content2 li{
+    font-size: 45px;
+    font-family: 'NanumSquare';
+    position: relative;
+    cursor:pointer;
+}
+#content2 ul .gr{
+    background-color: gray;
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    line-height: 35px;
+}
+.world,
+.future,
+.life{
+    text-align:center;
+    padding:120px 0px;
+    box-sizing: border-box;
+}
+#content2 ul .co{
+    background-color:#113640;
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    color:#fff;
+    line-height: 35px;
+}
+.life1_1,
+.world1_1, 
+.future1_1{
+    font-size: 18px;
+    padding:100px 15px;
+    box-sizing: border-box;
+    position: absolute;
+    top:0px;
+    text-align: center;
+    opacity: 0;
+}
+.world1_1{ font-size:17px;}
+
+/*_______________콘2 hover________________*/
+
+#content2 li:hover .life{
+    opacity:0;
+}
+#content2 li:hover .life1_1{
+    opacity:1;
+    color:#fff;
+    transition: 0.7s;
+}
+#content2 li:hover .future{
+    opacity:0;
+}
+#content2 li:hover .future1_1{
+    opacity:1;
+    color:#000;
+    transition: 0.7s;
+}
+#content2 li:hover .world{
+    opacity:0;
+}
+#content2 li:hover .world1_1{
+    opacity:1;
+    color:#fff;
+    transition: 0.7s;
+}
+
+/*________________콘3 년도________________*/
+
+#content3{
+    width:1200px;
+    margin:0px auto;
+    padding: 80px 0px;
+    background-image: url(/img/common_back.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: 800px 50px;
+}
+#content3 h2{
+    font-size: 50px;
+    font-family: '국립박물관문화재단클래식B';
+    color:#113640;
+    padding:20px 0px;
+    border-bottom:1px solid #113640;
+    margin-bottom:30px;
+}
+#content3 .year{
+    display: flex;
+    justify-content: space-around;
+}
+.year li{
+    font-family: '국립박물관문화재단클래식B';
+    font-size: 30px;
+    margin-bottom:50px;
+    width:130px;
+    text-align: center;
+}
+.year a{
+    color:#777;
+    width:100%;
+    height:100%;
+    display:block;
+    border-bottom: 5px solid #ddd;
+}
+.year li:first-child a{
+    color:#113640;
+    border-bottom: 5px solid #113640;
+}
+
+/*_1945~_*/
+#content3 h4{
+    font-size: 20px;
+    font-family: 'NanumSquare';
+}
+.box1_1{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.number{
+    font-size:16px;
+    font-weight: bold;
+    line-height:25px;
+}
+.box1 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+}
+
+/*________________1955~________________*/
+.box2_2{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.box2 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+}
+
+/*________________1972~________________*/
+.box3_3{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.box3 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+}
+
+/*________________1986~________________*/
+.box4_4{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.box4 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+}
+
+/*________________1996~________________*/
+.box5_5{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.box5 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+}
+
+/*________________2005~________________*/
+.box6_6{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.box6 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+}
+
+.box2,.box3,.box4,.box5,.box6{
+    display:none;
+}
+
+/*__________________콘4__________________*/
+#content4{
+    width:1200px;
+    margin: 0px auto;
+    padding:50px 0px 20px 0px;
+}
+#content4 img{
+    width:100%;
+}
+
+}
+
+
+
+/*_______________태블릿 버전________________*/
+
+@media(min-width:800px) and (max-width:1200px){
+
+    /*________________비쥬얼_________________*/
+    
+    #visual{
+        width:100%;
+        height:400px;
+        background-image:url(/img/common_visual.png);
+        background-repeat:no-repeat;
+        background-position:bottom;
+    }
+    #visual h1{
+        color:#fff;
+        font-size:75px;
+        text-align:center;
+        padding-top:100px;
+        font-family: '국립박물관문화재단클래식B';
+    }
+    #visual h2{
+        color:#fff;
+        font-size:25px;
+        text-align:center;
+        font-family: 'NanumSquare';
+        padding-top:10px;
+    }
+    /*__________________콘1__________________*/
+
+#content{
+    width:100%;
+    margin:0px auto;
+    padding:50px 0px;
+    background-image: url(/img/common_back.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+#content h3{
+    font-size: 50px;
+    font-family: '국립박물관문화재단클래식B';
+    color:#113640;
+    padding:20px 0px;
+    border-bottom:1px solid #113640;
+    margin-bottom:30px;
+}
+#content li img{
+    width:100%;
+    padding-top:50px;
+}
+#content .con1_1{
+    font-size: 20px;
+    font-family: 'NanumSquare';
+
+}
+
+/*__________________콘2__________________*/
+
+#content2{
+    width:100%;
+    margin:0px auto;
+    padding:10px 0px;
+}
+#content2 h3{
+    font-size: 50px;
+    font-family: '국립박물관문화재단클래식B';
+    color:#113640;
+    padding:20px 0px;
+    border-bottom:1px solid #113640;
+    margin-bottom:80px;
+}
+#content2 ul{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#content2 li{
+    font-size: 45px;
+    font-family: 'NanumSquare';
+    position: relative;
+}
+#content2 ul .gr{
+    background-color: gray;
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    line-height: 30px;
+}
+.world,
+.future,
+.life{
+    text-align:center;
+    padding:110px 0px;
+    box-sizing: border-box;
+}
+#content2 ul .co{
+    background-color:#113640;
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+    color:#fff;
+    line-height: 30px;
+}
+.life1_1,
+.world1_1, 
+.future1_1{
+    font-size: 15px;
+    padding:85px 15px;
+    box-sizing: border-box;
+    position: absolute;
+    top:0px;
+    text-align: center;
+    opacity: 0;
+}
+.world1_1{ font-size:14px;}
+
+/*_________________콘2 hover_________________*/
+
+#content2 li:hover .life{
+    opacity:0;
+}
+#content2 li:hover .life1_1{
+    opacity:1;
+    color:#fff;
+}
+#content2 li:hover .future{
+    opacity:0;
+}
+#content2 li:hover .future1_1{
+    opacity:1;
+    color:#000;
+}
+#content2 li:hover .world{
+    opacity:0;
+}
+#content2 li:hover .world1_1{
+    opacity:1;
+    color:#fff;
+}
+
+/*_________________콘3 년도_________________*/
+
+#content3{
+    width:100%;
+    margin:0px auto;
+    padding: 80px 0px;
+}
+#content3 h2{
+    font-size: 50px;
+    font-family: '국립박물관문화재단클래식B';
+    color:#113640;
+    padding:20px 0px;
+    border-bottom:1px solid #113640;
+    margin-bottom:30px;
+}
+#content3 .year{
+    display: flex;
+    justify-content: space-around;
+}
+
+.year li{
+    font-family: '국립박물관문화재단클래식B';
+    font-size: 30px;
+    width:130px;
+    text-align: center;
+}
+.year a{
+    color:#777;
+    width:100%;
+    height:100%;
+    display:block;
+    border-bottom: 5px solid #ddd;
+}
+.year li:first-child a{
+    color:#113640;
+    border-bottom: 5px solid #113640;
+}
+/*__________________1945~__________________*/
+
+#content3 h4{
+    font-size: 30px;
+    font-family: 'NanumSquare';
+    font-weight: bold;
+    padding:50px 0px;
+    color:#113640;
+}
+.box1_1,.box2_2,.box3_3,.box4_4,.box5_5,.box6_6{
+    padding-top: 50px;
+    background-image: url(/img/common_back.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: 400px , -20px;
+}
+.number{
+    font-size:16px;
+    font-weight: bold;
+    line-height:25px;
+}
+.box1 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+    border-bottom: 1px solid #ddd;
+}
+
+/*__________________1955~__________________*/
+
+.box2 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+    border-bottom: 1px solid #ddd;
+}
+
+/*__________________1972~__________________*/
+
+.box3 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+    border-bottom: 1px solid #ddd;
+}
+
+/*__________________1986~__________________*/
+
+.box4 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+    border-bottom: 1px solid #ddd;
+}
+
+/*__________________1996~__________________*/
+
+.box5 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+    border-bottom: 1px solid #ddd;
+}
+
+/*__________________2005~__________________*/
+
+.box6 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+    border-bottom: 1px solid #ddd;
+}
+
+.box2,.box3,.box4,.box5,.box6{
+    display:none;
+}
+
+/*__________________콘4__________________*/
+
+#content4 img{
+    width:100%;
+    padding:50px 0px 20px 0px;
+}
+
+}
+
+
+/*________________모바일 버전_________________*/
+
+
+@media(max-width:800px){
+
+    /*_________________비쥬얼_________________*/
+
+    #visual{
+        width:100%;
+        height:400px;
+        background-image:url(/img/common_visual.png);
+        background-repeat:no-repeat;
+        background-position:bottom;
+    }
+    #visual h1{
+        color:#fff;
+        font-size:75px;
+        text-align:center;
+        padding-top:100px;
+        font-family: '국립박물관문화재단클래식B';
+    }
+    #visual h2{
+        color:#fff;
+        font-size:25px;
+        text-align:center;
+        font-family: 'NanumSquare';
+        padding-top:10px;
+    }
+
+ /*__________________콘1__________________*/
+
+#content{
+    width:100%;
+    margin:0px auto;
+    padding:50px 0px;
+    background-image: url(/img/common_back.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+#content h3{
+    font-size: 50px;
+    font-family: '국립박물관문화재단클래식B';
+    color:#113640;
+    padding:20px 0px;
+    border-bottom:1px solid #113640;
+    margin-bottom:30px;
+    text-align: center;
+}
+#content li img{
+    width:100%;
+    padding-top:50px;
+}
+#content .con1_1{
+    font-size: 15px;
+    font-family: 'NanumSquare';
+}
+#content .center{
+    width:400px;
+    margin:0px auto;
+}
+
+/*__________________콘2__________________*/
+
+#content2{
+    width:100%;
+    margin:0px auto;
+    padding:10px 0px;
+}
+#content2 h3{
+    font-size: 50px;
+    font-family: '국립박물관문화재단클래식B';
+    color:#113640;
+    padding:20px 0px;
+    border-bottom:1px solid #113640;
+    margin-bottom:80px;
+    text-align: center;
+}
+#content2 ul{
+    width:250px;
+    margin:0px auto;
+    text-align: center;
+}
+#content2 li{
+    font-size: 45px;
+    font-family: 'NanumSquare';
+    position: relative;
+    padding:10px;
+    width:100%;
+}
+#content2 ul .gr{
+    background-color: gray;
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    line-height: 30px;
+}
+.world,
+.future,
+.life{
+    text-align:center;
+    padding:110px 0px;
+    box-sizing: border-box;
+}
+#content2 ul .co{
+    background-color:#113640;
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+    color:#fff;
+    line-height: 30px;
+}
+.life1_1,
+.world1_1, 
+.future1_1{
+    font-size: 15px;
+    padding:75px 15px;
+    box-sizing: border-box;
+    position: absolute;
+    top:0px;
+    text-align: center;
+    opacity: 0;
+}
+.world1_1{ font-size:14px;}
+
+/*_________________콘2 hover_________________*/
+
+#content2 li:hover .life{
+    opacity:0;
+}
+#content2 li:hover .life1_1{
+    opacity:1;
+    color:#fff;
+}
+#content2 li:hover .future{
+    opacity:0;
+}
+#content2 li:hover .future1_1{
+    opacity:1;
+    color:#000;
+}
+#content2 li:hover .world{
+    opacity:0;
+}
+#content2 li:hover .world1_1{
+    opacity:1;
+    color:#fff;
+}
+
+
+/*__________________콘3 년도__________________*/
+
+#content3{
+    width:100%;
+    margin:0px auto;
+    padding: 80px 0px;
+}
+#content3 h2{
+    font-size: 50px;
+    font-family: '국립박물관문화재단클래식B';
+    color:#113640;
+    padding:20px 0px;
+    border-bottom:1px solid #113640;
+    margin-bottom:30px;
+    text-align: center;
+}
+#content3 .year{
+    padding-left: 10px;;
+    display: flex;
+    flex-wrap: wrap;
+    gap:35px;
+}
+.year li{
+    font-family: '국립박물관문화재단클래식B';
+    font-size: 30px;
+    margin-bottom:50px;
+    width:130px;
+    text-align: center;
+}
+.year a{
+    color:#777;
+    width:100%;
+    height:100%;
+    display:block;
+    border-bottom: 5px solid #ddd;
+}
+.year li:first-child a{
+    color:#113640;
+    border-bottom: 5px solid #113640;
+}
+
+/*__________________1945~__________________*/
+
+#content3 h4{
+    font-size: 30px;
+    font-family: 'NanumSquare';
+    font-weight: bold;
+    padding:50px 0px;
+    color:#113640;
+    text-align: center;
+}
+.box1_1,.box2_2,.box3_3,.box4_4,.box5_5,.box6_6{
+    padding-top: 50px;
+    background-image: url(/img/common_back.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: 250px , -20px;
+
+}
+.number{
+    font-size:16px;
+    font-weight: bold;
+    line-height:25px;
+}
+.box1 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+    border-bottom: 1px solid #ddd;
+}
+
+/*__________________1955~__________________*/
+
+.box2 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+    border-bottom: 1px solid #ddd;
+}
+
+/*__________________1972~__________________*/
+
+.box3 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+    border-bottom: 1px solid #ddd;
+}
+
+/*__________________1986~__________________*/
+
+.box4 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+    border-bottom: 1px solid #ddd;
+}
+
+/*__________________1996~__________________*/
+
+.box5 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+    border-bottom: 1px solid #ddd;
+}
+
+/*__________________2005~__________________*/
+
+.box6 li{
+    padding:10px;
+    font-family: 'NanumSquare';
+    border-bottom: 1px solid #ddd;
+}
+
+.box2,.box3,.box4,.box5,.box6{
+    display:none;
+}
+
+/*__________________콘4__________________*/
+
+#content4 img{
+    width:100%;
+    padding:10px 0px 20px 0px;
+}
+
+
+
+
+
+
+}

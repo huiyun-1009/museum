@@ -1,0 +1,1259 @@
+/* =========== pc =========== */
+/* 전체 */
+body {
+  overflow-x: hidden;
+}
+/* ----------- 헤더 ----------- */
+header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background-color: transparent;
+  z-index: 900;
+  vertical-align: center;
+  align-items: center;
+}
+.logo {
+  width: 200px;
+  height: 70px;
+  position: relative;
+}
+.logo img {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.logo_bk {
+  opacity: 1;
+}
+.logo_wh {
+  opacity: 0;
+}
+header i,
+header li a {
+  color: #eee;
+}
+/* 스크롤시 헤더 변화 */
+.header,
+.logo img,
+header i,
+header li a {
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+.down {
+  background-color: #fff;
+  box-shadow: 0 0 10px #000;
+}
+.down .logo_bk {
+  opacity: 0;
+}
+.down .logo_wh {
+  opacity: 1;
+}
+.down a,
+.down i {
+  color: #222;
+}
+/* ----------- 비주얼 ----------- */
+#index_visual {
+  width: 100%;
+  height: 100dvh;
+  position: relative;
+}
+#index_visual video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 포지션으로 글자 있는 투명한 박스 자체를 비디오 위에 얹은 상태 */
+.visual_wrap {
+  width: 100%;
+  height: 100dvh;
+  position: absolute;
+  top: 0;
+  background-color: #0e0e0e21;
+  text-align: center;
+}
+.visual_wrap .txt {
+  margin-top: calc(50dvh - 205.6px);
+  color: #eee;
+}
+.visual_wrap .txt p {
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+.visual_wrap .txt h1 {
+  font-size: 130px;
+  font-family: "국립박물관문화재단클래식B";
+}
+/* 스크롤 애니메이션 */
+.mouse_ani {
+  width: 150px;
+  margin: calc((50dvh - 254.8px) / 2) auto;
+  font-size: 18px;
+  color: #eee;
+}
+.mouse_shape {
+  width: 25px;
+  height: 50px;
+  margin: 0px auto;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 25px;
+  position: relative;
+}
+.mouse_incir {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: calc(15px / 2);
+  background-color: #eee;
+  animation-duration: 1.5s;
+  animation-name: scroll-down;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.mouse_ani p {
+  margin: 10px auto;
+}
+@keyframes scroll-down {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+}
+/* 관람 시간 안내 */
+.visiting_hours {
+  width: 1200px;
+  height: 70px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+}
+.visiting_hours div:first-child{
+  color:#eee;
+}
+.visiting_hours div:last-child i {
+  color: #222;
+}
+/* 관람 가능 유무 */
+.visiting_hours > div:first-child {
+  width: 300px;
+  background-color: #113640;
+  line-height: 70px;
+  color: #eee;
+}
+/* 그외 안내사항 */
+.visiting_hours > div:last-child {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #eee;
+}
+.visiting_hours p {
+  display: inline;
+}
+/* ----------- (컨테이너1) 대표 상설전시 ----------- */
+.min-wd {
+  width: 1200px;
+  margin: 100px auto;
+}
+#index_con1_perexhi h2 {
+  width: 180px;
+  font-size: 40px;
+  margin: 80px 0;
+  border-bottom: 5px solid #113640;
+}
+/* 전시실 이름 */
+.index_con1_name {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+.index_con1_name li {
+  width: 600px;
+  padding: 15px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #174f5f;
+  color: #fff;
+  cursor: pointer;
+}
+.index_con1_name li:nth-child(2),
+.index_con1_name li:last-child {
+  background-color: transparent;
+  color: #222;
+}
+.index_con1_name li:hover {
+  color: #fff;
+  background-color: #272727;
+  transition: 0.5s;
+}
+/* 설명 */
+.index_con1_info {
+  width: 100%;
+  background-color: #ccc;
+  position: relative;
+}
+.index_con1_info > div {
+  display: flex;
+  justify-content: space-between;
+}
+/* 1200에서 이미지 너비값 뺌 */
+.index_con1_txt {
+  width: 900px;
+  padding: 40px 0px;
+  box-sizing: border-box;
+  font-size: 25px;
+  text-align: right;
+}
+.index_con1_txt li:nth-child(2),
+.index_con1_txt li:last-child {
+  display: none;
+}
+.index_con1_txt p {
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+.index_con1_txt .more {
+  width: 250px;
+  padding: 20px;
+  float: right;
+  box-sizing: border-box;
+  background-color: #406570;
+  text-align: center;
+}
+.index_con1_txt .more a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #eee;
+}
+.index_con1_txt .more:hover {
+  background-color: #57828f;
+}
+/* 유물 사진 */
+.index_con1_img {
+  width: 300px;
+  position: absolute;
+  right: 150px;
+  bottom: -3px;
+}
+.index_con1_img img {
+  width: 100%;
+  height: auto;
+  display: inline;
+}
+.index_con1_img img:nth-child(2),
+.index_con1_img img:last-child {
+  display: none;
+}
+/* ----------- (컨테이너2) 문화행사 ----------- */
+@media (min-width: 1200px) {
+  #con2 {
+    width: 1200px;
+    margin: 100px auto;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+  #con2 img {
+    width: 500px;
+    height: 700px;
+  }
+  #con2 h2 {
+    font-size: 50px;
+    font-family: "국립박물관문화재단클래식B";
+    padding-bottom: 20px;
+    color: #113640;
+  }
+  #con2 p {
+    font-size: 17px;
+    color: #666;
+    padding-bottom: 30px;
+  }
+  .con2_2 li {
+    font-size: 20px;
+    padding: 25px 0px;
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .pro_img {
+    position: relative;
+  }
+  .right {
+    font-size: 40px;
+    /* padding-left: 70px; */
+  }
+  .pro_img li:first-child {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  .pro_img li:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+  }
+  .pro_img li:nth-child(3) {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .pro_img li:last-child {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .pro_list li:first-child {
+    background-color: #113640;
+    border-radius: 20px;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    right: -3rem;
+    padding: 0px 10px;
+    height: 131px;
+  }
+  .pro_list li:first-child a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+  }
+  .pro_list li:first-child a,
+  i {
+    color: #fff;
+  }
+  .pro_list li:first-child .right {
+    display: block;
+  }
+  /* 교육hover */
+  .pro_list li:first-child:hover {
+    background-color: #113640;
+    border-radius: 20px;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    right: -3rem;
+    padding: 0px 10px;
+    height: 131px;
+  }
+  .pro_list li:first-child :hover a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+  }
+  .pro_list li:first-child:hover a,
+  i {
+    color: #fff;
+  }
+  .pro_list li:first-child:hover .right {
+    display: block;
+  }
+  /* 문화hover */
+  .pro_list li:nth-child(2):hover {
+    background-color: #113640;
+    border-radius: 20px;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    right: -3rem;
+    padding: 0px 10px;
+    height: 131px;
+  }
+  .pro_list li:nth-child(2) :hover a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+  }
+  .pro_list li:nth-child(2):hover a,
+  i {
+    color: #fff;
+  }
+  .pro_list li:nth-child(2):hover .right {
+    display: block;
+  }
+  /* 행사1 hover */
+  .pro_list li:nth-child(3):hover {
+    background-color: #113640;
+    border-radius: 20px;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    right: -3rem;
+    padding: 0px 10px;
+    height: 131px;
+  }
+  .pro_list li:nth-child(3) :hover a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+  }
+  .pro_list li:nth-child(3):hover a,
+  i {
+    color: #fff;
+  }
+  .pro_list li:nth-child(3):hover .right {
+    display: block;
+  }
+  /*행사2 hover*/
+  .pro_list li:last-child:hover {
+    background-color: #113640;
+    border-radius: 20px;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    right: -3rem;
+    padding: 0px 10px;
+    height: 131px;
+  }
+  .pro_list li:last-child :hover a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+  }
+  .pro_list li:last-child:hover a,
+  i {
+    color: #fff;
+  }
+  .pro_list li:last-child:hover .right {
+    display: block;
+  }
+  /* 배너 */
+  #con3 {
+    width: 1200px;
+    margin: 150px auto;
+  }
+  #con3 img {
+    width: 100%;
+    height: 150px;
+  }
+  /* -------- (컨테이너3) 특별전시 ----------- */
+  .con3_main_spe {
+    width: 100%;
+    height: 100%;
+    margin: 100px auto;
+  }
+  .main_wrap {
+    width: 1600px;
+
+    margin: 0px auto;
+  }
+  .con3_main_spe h2 {
+    width: 120px;
+    font-size: 30px;
+    margin: 50px 0px;
+    border-bottom: 5px solid rgb(17, 54, 64);
+    padding-bottom: 10px;
+  }
+
+  .con3_main_spe ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+  }
+  .main_vid1,
+  .main_vid2,
+  .main_vid3 {
+    width: 100%;
+  }
+  .con3_main_spe li img {
+    width: 33%;
+    height: 600px;
+    position: absolute;
+    z-index: 888;
+  }
+  .con3_main_spe video {
+    width: 33%;
+    height: 700px;
+    object-fit: fill;
+    position: absolute;
+    bottom: 700;
+    opacity: 0;
+  }
+  .con3_main_spe .main_vid_txt {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0px;
+    transform: translateY(600px);
+  }
+  .con3_main_spe .main_vid_txt p {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+  /* -------- (컨테이너4) 다녀온 이야기 ----------- */
+  .con5 {
+    width: 1200px;
+    margin: -50px auto;
+    margin-bottom: 100px;
+  }
+  .reviewTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .reviewTitle h2 {
+    font-size: 25px;
+    font-weight: 900;
+    border-bottom: 4px solid #476269;
+    padding: 0px 20px 5px 0px;
+  }
+  .reviewNum {
+    font-size: 45px;
+    font-weight: 900;
+    color: #476269;
+    margin-right: 10px;
+  }
+  .reviewTitle li {
+    font-size: 15px;
+  }
+  .reviewPlus {
+    font-size: 40px;
+    font-weight: 100;
+  }
+  .con5 img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+  }
+  .review {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+  }
+  .review li {
+    width: 200px;
+  }
+  .review h4 {
+    font-weight: 900;
+    margin: 20px 0px 5px 0px;
+  }
+  .reviewMore {
+    font-size: 11px;
+    margin-top: 12px;
+    text-align: left;
+  }
+  .Rwriter {
+    color: #476269;
+    font-weight: 900;
+  }
+  .Rdate {
+    color: #888;
+    font-weight: 500;
+  }
+}
+
+/* =========== 태블릿 버전 =========== */
+
+@media (max-width: 1200px) {
+  /* ----------- 비주얼 ----------- */
+  .visual_wrap .txt {
+    margin-top: calc(50dvh - 153.6px);
+    color: #eee;
+  }
+  .visual_wrap .txt h1 {
+    font-size: 100px;
+    font-family: "국립박물관문화재단클래식B";
+  }
+  .visual_wrap .txt p {
+    font-size: 20px;
+  }
+  /* 스크롤 애니메이션 */
+  .mouse_ani {
+    width: 150px;
+    margin: calc((50dvh - 254.8) / 2) auto;
+    font-size: 18px;
+    color: #eee;
+  }
+  /* 관람 시간 안내 */
+  .visiting_hours {
+    width: 100%;
+    padding: 0;
+    display: block;
+  }
+  .visiting_hours > div:first-child {
+    width: 100%;
+    margin: 0;
+  }
+  .visiting_hours > div:last-child {
+    width: 100%;
+    height: 70px;
+  }
+  /* ----------- (컨테이너1) 대표 상설전시 ----------- */
+  .min-wd {
+    width: 80%;
+    margin: 70px auto;
+  }
+  #index_con1_perexhi h2 {
+    font-size: 35px;
+  }
+  /* 전시실 이름 */
+  .index_con1_name li {
+    width: 400px;
+    font-size: 40px;
+  }
+  /* 설명 */
+  .index_con1_info {
+    margin-top: 70px;
+  }
+  .index_con1_info > div {
+    position: relative;
+  }
+  .index_con1_txt {
+    width: 100%;
+    font-size: 20px;
+  }
+  .index_con1_txt p {
+    font-size: 20px;
+  }
+  /* 더보기 */
+  .index_con1_txt .more {
+    width: 200px;
+    padding: 20px;
+  }
+  /* 유물 사진 */
+  .index_con1_img {
+    width: 200px;
+    top: -398px;
+    right: 0;
+  }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  /* ----------- (컨테이너2) 문화행사 ----------- */
+  /* con2 */
+  #con2 {
+    width: 100%;
+    margin: 0px auto;
+    padding: 50px 50px;
+    display: flex;
+    gap: 30px;
+  }
+  #con2 img {
+    width: 100%;
+    height: 650px;
+  }
+  #con2 h2 {
+    font-size: 40px;
+    font-family: "국립박물관문화재단클래식B";
+    padding-bottom: 15px;
+    color: #113640;
+  }
+  #con2 p {
+    font-size: 13px;
+    color: #666;
+    padding-bottom: 20px;
+  }
+  .con2_2 li {
+    font-size: 15px;
+    /* padding:20px 0px; */
+    border-bottom: 1px solid #ddd;
+    line-height: 30px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+    height: 131px;
+  }
+  .pro_img {
+    position: relative;
+  }
+  .right {
+    font-size: 20px;
+  }
+  .pro_img li:first-child {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  .pro_img li:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+  }
+  .pro_img li:nth-child(3) {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .pro_img li:last-child {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .pro_list li:first-child {
+    background-color: #113640;
+    border-radius: 20px;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    right: -2rem;
+    padding: 0px 10px;
+    /* height:131px; */
+  }
+  .pro_list li:first-child a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+  }
+  .pro_list li:first-child a,
+  i {
+    color: #fff;
+  }
+  .pro_list li:first-child .right {
+    display: block;
+  }
+  /* 교육hover */
+  .pro_list li:first-child:hover {
+    background-color: #113640;
+    border-radius: 20px;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    right: -2rem;
+    padding: 0px 10px;
+    height: 131px;
+  }
+  .pro_list li:first-child :hover a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+  }
+  .pro_list li:first-child:hover a,
+  i {
+    color: #fff;
+  }
+  .pro_list li:first-child:hover .right {
+    display: block;
+  }
+  /* 문화hover */
+  .pro_list li:nth-child(2):hover {
+    background-color: #113640;
+    border-radius: 20px;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    right: -2rem;
+    padding: 0px 10px;
+    height: 131px;
+  }
+  .pro_list li:nth-child(2) :hover a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+  }
+  .pro_list li:nth-child(2):hover a,
+  i {
+    color: #fff;
+  }
+  .pro_list li:nth-child(2):hover .right {
+    display: block;
+  }
+  /* 행사1 hover */
+  .pro_list li:nth-child(3):hover {
+    background-color: #113640;
+    border-radius: 20px;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    right: -2rem;
+    padding: 0px 10px;
+    height: 131px;
+  }
+  .pro_list li:nth-child(3) :hover a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+  }
+  .pro_list li:nth-child(3):hover a,
+  i {
+    color: #fff;
+  }
+  .pro_list li:nth-child(3):hover .right {
+    display: block;
+  }
+  /* 행사2 hover */
+  .pro_list li:last-child:hover {
+    background-color: #113640;
+    border-radius: 20px;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    right: -2rem;
+    padding: 0px 10px;
+    height: 131px;
+  }
+  .pro_list li:last-child :hover a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+  }
+  .pro_list li:last-child:hover a,
+  i {
+    color: #fff;
+  }
+  .pro_list li:last-child:hover .right {
+    display: block;
+  }
+  /* 배너 */
+  #con3 {
+    width: 100%;
+    margin: 70px 0px 120px;
+  }
+  #con3 img {
+    width: 100%;
+    height: 150px;
+  }
+  /* ----------- 컨테이너3 ----------- */
+  .main_wrap {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 20px;
+    box-sizing: border-box;
+  }
+  .con3_main_spe h2 {
+    width: 120px;
+    font-size: 30px;
+    margin: 50px 0px;
+    border-bottom: 5px solid rgb(17, 54, 64);
+    padding-bottom: 10px;
+  }
+  .con3_main_spe ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+  }
+  .main_vid1,
+  .main_vid2,
+  .main_vid3 {
+    width: 100%;
+  }
+  .con3_main_spe li img {
+    width: 33%;
+    height: 600px;
+    position: absolute;
+    z-index: 888;
+  }
+  .con3_main_spe video {
+    width: 33%;
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+  }
+  .con3_main_spe .main_vid_txt {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0px;
+    transform: translateY(600px);
+  }
+  .con3_main_spe .main_vid_txt p {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+  /* -------- (컨테이너4) 다녀온 이야기 ----------- */
+  .con5 {
+    width: 800px;
+    margin: 0px auto;
+    margin-bottom: 100px;
+  }
+  .reviewTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .reviewTitle h2 {
+    font-size: 25px;
+    font-weight: 900;
+    border-bottom: 4px solid #476269;
+    padding: 0px 20px 5px 0px;
+  }
+  .reviewNum {
+    font-size: 45px;
+    font-weight: 900;
+    color: #476269;
+    margin-right: 10px;
+  }
+  .reviewTitle li {
+    font-size: 15px;
+  }
+  .reviewPlus {
+    font-size: 40px;
+    font-weight: 100;
+  }
+  .con5 img {
+    width: 180px;
+    height: 110px;
+    object-fit: cover;
+  }
+  .review {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+  }
+  .review li {
+    width: 180px;
+  }
+  .review h4 {
+    font-size: 15px;
+    font-weight: 900;
+    margin: 20px 0px 5px 0px;
+  }
+  .reviewMore {
+    font-size: 11px;
+    margin-top: 12px;
+    text-align: left;
+  }
+  .Rwriter {
+    color: #476269;
+    font-weight: 900;
+  }
+  .Rdate {
+    color: #888;
+    font-weight: 500;
+  }
+}
+
+/* =========== 모바일 버전 =========== */
+@media (max-width: 800px) {
+  /* ----------- 비주얼 ----------- */
+  .visual_wrap .txt {
+    margin-top: calc(35dvh - 70.4px);
+    color: #eee;
+  }
+  .visual_wrap .txt h1 {
+    font-size: 45px;
+  }
+  .visual_wrap .txt p {
+    font-size: 10px;
+    letter-spacing: 5px;
+  }
+  /* 스크롤 애니메이션(수정 반드시 필요) */
+  .mouse_ani {
+    width: 150px;
+    margin: calc((65dvh - 381.6px) / 2) auto;
+    font-size: 18px;
+    color: #eee;
+  }
+  .mouse_shape {
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .mouse_incir {
+    width: 10px;
+    height: 10px;
+    top: 4px;
+    left: 5px;
+  }
+  .mouse_ani p {
+    font-size: 15px;
+  }
+  @keyframes scroll-down {
+    from {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+  }
+  /* 관람 시간 안내 */
+  .visiting_hours {
+    width: 100%;
+    padding: 0;
+    display: block;
+  }
+  .visiting_hours > div:first-child {
+    width: 100%;
+    margin: 0;
+  }
+  .visiting_hours > div:last-child {
+    width: 100%;
+    display: block;
+  }
+  .visiting_hours > div:last-child span {
+    height: 70px;
+    box-sizing: border-box;
+    display: block;
+    background-color: #eee;
+    line-height: 70px;
+  }
+  .visiting_hours > div:last-child span:nth-child(2) {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  /* ----------- (컨테이너1) 대표 상설전시 ----------- */
+  /* 전시실 이름 */
+  .index_con1_name li {
+    width: 300px;
+  }
+  /* 설명 */
+  .index_con1_info {
+    margin-top: 230px;
+  }
+  .index_con1_txt p {
+    font-size: 20px;
+  }
+  /* 유물 사진 */
+  .index_con1_img {
+    width: 150px;
+    top: -300px;
+  }
+  /* ----------- (컨테이너2) 문화행사 ----------- */
+  #con2 {
+    width: 100%;
+    margin: 0px auto;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  #con2 img {
+    display: none;
+  }
+  #con2 h2 {
+    font-size: 40px;
+    text-align: center;
+    font-family: "국립박물관문화재단클래식B";
+    padding-bottom: 15px;
+    color: #113640;
+  }
+  #con2 p {
+    font-size: 13px;
+    color: #666;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .con2_2 li {
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 131px;
+  }
+  .pro_list a {
+    padding-left: 50px;
+  }
+  .right {
+    font-size: 20px;
+  }
+  /* 배너 */
+  #con3 {
+    width: 100%;
+  }
+  #con3 img {
+    width: 100%;
+    height: 150px;
+  }
+  /* ----------- 컨테이너3 ----------- */
+  .main_wrap {
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px 20px;
+    box-sizing: border-box;
+  }
+  .con3_main_spe h2 {
+    width: 120px;
+    font-size: 30px;
+    margin: 50px 0px;
+    border-bottom: 5px solid rgb(17, 54, 64);
+    padding-bottom: 10px;
+  }
+
+  .con3_main_spe ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .main_vid1,
+  .main_vid2,
+  .main_vid3 {
+    width: 100%;
+    margin-bottom: 700px;
+  }
+
+  .nono {
+    display: none;
+  }
+  .con3_main_spe li img {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    z-index: 888;
+  }
+  .con3_main_spe video {
+    width: 100%;
+
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+  }
+  .con3_main_spe .main_vid_txt {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0px;
+    transform: translateY(600px);
+  }
+  .con3_main_spe .main_vid2 h3,
+  .con3_main_spe .main_vid2 p,
+  .con3_main_spe .main_vid3 h3,
+  .con3_main_spe .main_vid3 p {
+    display: none;
+  }
+  /* -------- (컨테이너4) 다녀온 이야기 ----------- */
+  .hide {
+    display: none;
+  }
+  .con5 {
+    width: 500px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+  }
+  .reviewTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-left: 50px;
+  }
+  .reviewTitle h2 {
+    font-size: 25px;
+    font-weight: 900;
+    border-bottom: 4px solid #476269;
+    padding: 0px 20px 5px 0px;
+  }
+  .reviewNum {
+    font-size: 45px;
+    font-weight: 900;
+    color: #476269;
+    margin-right: 10px;
+  }
+  .reviewTitle li {
+    font-size: 15px;
+  }
+  .reviewPlus {
+    font-size: 40px;
+    font-weight: 100;
+  }
+  .con5 img {
+    width: 180px;
+    height: 110px;
+    object-fit: cover;
+  }
+  .review {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .review li {
+    width: 180px;
+  }
+  .review h4 {
+    font-size: 15px;
+    font-weight: 900;
+    margin: 20px 0px 5px 0px;
+  }
+  .reviewMore {
+    font-size: 11px;
+    margin-top: 12px;
+    text-align: left;
+  }
+  .Rwriter {
+    color: #476269;
+    font-weight: 900;
+  }
+  .Rdate {
+    color: #888;
+    font-weight: 500;
+  }
+}

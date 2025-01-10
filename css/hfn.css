@@ -1,0 +1,448 @@
+/* 메인, 서브 모두 공통으로 쓰는 파일 */
+/* ---------pc------------- */
+/* header */
+header {
+  width:100%;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  position: fixed;
+  top:0;
+  left:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#fff;
+  z-index:900;
+}
+header img {
+  width: 200px;
+}
+header ul {
+  display: flex;
+  gap: 100px;
+}
+header a {
+  font-size: 20px;
+}
+header i {
+  width: 200px;
+  font-size: 30px;
+  text-align: right;
+  cursor: pointer;
+}
+/* 내비게이션 */
+nav{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 999;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+nav .close {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  box-sizing: border-box;
+}
+nav .close i {
+  font-size: 35px;
+  cursor: pointer;
+}
+nav .close img {
+  width: 200px;
+}
+nav .sitemap {
+  font-size: 20px;
+}
+
+@media(min-width: 1200px){
+  /* navigation */
+  nav {
+    background-color: #fff;
+    background-image: url(../img/menubg.jpg);
+  }
+  nav .sitemap {
+    padding-left: 100px;
+    margin-top:calc((100dvh - 434.19px)/2)
+  }
+  nav .center {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    box-sizing: border-box;
+  }
+  .search p {
+    font-size: 25px;
+  }
+  .search h2 {
+    font-size: 50px;
+    margin-bottom: 100px;
+  }
+
+  /* 검색창 */
+  .search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 0px 5px;
+  }
+
+  .search-txt {
+    border: none;
+    width: 300px;
+    padding: 20px 10px;
+    border-radius: 25px;
+    outline: none;
+  }
+  .search-btn {
+    border: none;
+    background-color: #fff;
+    font-size: 25px;
+    margin-left: 5px;
+    padding: 0px 10px;
+    border-radius: 20px;
+  }
+
+  nav .menu {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul p {
+    margin: 30px 0px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  nav .wrap2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    /* margin: 300px 0px; */
+    box-sizing: border-box;
+  }
+  nav .wrap2 span {
+    font-size: 14px;
+  }
+  nav .sns2 {
+    display: flex;
+    gap: 15px;
+  }
+
+  /* footer */
+
+  footer {
+    width: 100%;
+    background-color: #000;
+    color: #aaa;
+    padding: 40px 80px;
+    box-sizing: border-box;
+  }
+
+  footer img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  footer a {
+    color: #aaa;
+    font-size: 20px;
+  }
+
+  footer .tel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer ul {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px;
+  }
+
+  footer .privacy {
+    justify-content: space-between;
+    margin: 30px 0px;
+  }
+  footer span {
+    font-size: 12px;
+  }
+}
+
+/* ----------------------태블릿------------------ */
+/* (min-width: 800px) and */
+@media (max-width: 1200px){
+  /* header */
+  header {
+    padding: 10px;
+  }
+  header ul {
+    display: flex;
+    gap: 50px;
+  }
+  header a {
+    font-size: 18px;
+  }
+  header i {
+    width: 100px;
+  }
+  header img {
+    width: 150px;
+  }
+
+  /* navigation */
+  nav {
+    background-image: url(../img/menubg.jpg);
+  }
+  nav .sitemap {
+    padding-left: 100px;
+    margin-top: 130px;
+  }
+  nav .center {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    box-sizing: border-box;
+  }
+  .search p {
+    font-size: 25px;
+  }
+  .search h2 {
+    font-size: 50px;
+    margin-bottom: 100px;
+  }
+
+  /* 검색창 */
+  .search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 0px 5px;
+  }
+
+  .search-txt {
+    border: none;
+    width: 240px;
+    padding: 20px 10px;
+    border-radius: 25px;
+    outline: none;
+  }
+  .search-btn {
+    border: none;
+    background-color: #fff;
+    font-size: 25px;
+    margin-left: 5px;
+    padding: 0px 10px;
+    border-radius: 20px;
+  }
+
+  nav .menu {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul p {
+    margin: 30px 0px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  nav .wrap2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    /* margin: 300px 0px; */
+    box-sizing: border-box;
+  }
+  nav .wrap2 span {
+    font-size: 14px;
+  }
+  nav .sns2 {
+    display: flex;
+    gap: 15px;
+  }
+
+  /* footer */
+
+  footer {
+    width: 100%;
+    background-color: #000;
+    color: #aaa;
+    padding: 40px 80px;
+    box-sizing: border-box;
+  }
+
+  footer img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  footer a {
+    color: #aaa;
+    font-size: 20px;
+  }
+
+  footer .tel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer ul {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px;
+  }
+
+  footer .privacy {
+    justify-content: space-between;
+    margin: 30px 0px;
+  }
+  footer span {
+    font-size: 12px;
+  }
+}
+
+/* -----------------모바일------------------------- */
+
+@media (max-width: 800px) {
+  /* header */
+  header img{
+    width: 150px;
+  }
+  header ul {
+    display: none;
+  }
+  
+  /* nav */
+  nav {
+    background-image: url(../img/menu_mobile.jpg);
+  }
+  nav .center {
+    display:block;
+    text-align: center;
+  }
+  nav .close {
+    padding: 15px;
+  }
+  nav .close img {
+    width: 150px;
+  }
+  nav .sitemap {
+    margin: 20px;
+    padding:0;
+    text-align: center;
+  }
+
+  .search h2 {
+    font-size: 40px;
+  }
+
+  /* 검색창 */
+  .search-box {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 0px 5px;
+    margin: 80px auto;
+  }
+
+  .search-txt {
+    border: none;
+    width: 250px;
+    padding: 20px 10px;
+    border-radius: 25px;
+    outline: none;
+  }
+  .search-btn {
+    border: none;
+    background-color: #fff;
+    font-size: 25px;
+    margin-left: 5px;
+    padding: 0px 10px;
+    border-radius: 20px;
+  }
+
+  nav .menu {
+    display:block;
+    text-align: center;
+    margin: 20px auto;
+  }
+  nav .menu h2 {
+    margin: 20px 0px;
+    font-size: 20px;
+  }
+  nav ul p {
+    display: none;
+  }
+  nav .wrap2 {
+    width:90%;
+    display:block;
+    margin: 0px auto;
+    box-sizing: border-box;
+    text-align:center;
+  }
+  nav .wrap2 strong {
+    font-size: 14px;
+  }
+  nav .wrap2 span {
+    font-size: 12px;
+  }
+  nav .sns2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0px;
+  }
+  nav .privacy{
+    width:80%;
+    margin:0px auto;
+    justify-content: center;
+  }
+  /* footer */
+
+  footer {
+    width: 100%;
+    background-color: #000;
+    color: #aaa;
+    padding: 40px 80px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  footer img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  footer p {
+    margin: 10px 0px;
+  }
+  footer a {
+    color: #aaa;
+    font-size: 20px;
+  }
+
+  footer .sns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0px;
+  }
+
+  footer .pri {
+    margin: 30px 0px;
+  }
+  footer .pri strong {
+    font-size: 12px;
+  }
+  footer span {
+    font-size: 11px;
+  }
+};

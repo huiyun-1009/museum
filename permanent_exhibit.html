@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/hfn.css">
+    <link rel="stylesheet" href="css/permanent_exhibit.css">
+    <!-- 나눔스퀘어 -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- 제이쿼리 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/hdn.js"></script>
+    <script src="js/permanent_exhibit.js"></script>
+    <title>상설전시</title>
+</head>
+<body>
+<!----------- 헤더 ----------->
+<header>
+    <h1>
+        <a href="index.html">
+            <img src="img/logo.png">
+        </a>
+    </h1>
+    <ul>
+        <li><a href="intro.html">소개</a></li>
+        <li><a href="permanent_exhibit.html">상설전시</a></li>
+        <li><a href="sub_spe.html">특별전시</a></li>
+        <li><a href="programm.html">프로그램</a></li>
+        <li><a href="goods.html">문화상품</a></li>
+    </ul>
+    <i class="fa-solid fa-bars"></i>
+</header>
+<!----------- 내비게이션 ----------->
+<nav>
+    <div class="close">
+        <img src="img/logo.png" />
+        <i class="xmark fa-solid fa-xmark"></i>
+    </div>
+    <p class="sitemap">Site map</p>
+    <div class="center">
+    <div class="search">
+        <h2>국립중앙박물관</h2>
+        <form class="search-box" action="" method="get">
+        <input
+            class="search-txt"
+            type="text"
+            name=""
+            placeholder="검색어를 입력하세요."
+        />
+        <button class="search-btn" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        </form>
+    </div>
+    <ul class="menu">
+        <li>
+            <h2><a href="intro.html">소개</a></h2>
+            <p><a href="javascript:;">인사말</a></p>
+            <p><a href="javascript:;">비전</a></p>
+            <p><a href="javascript:;">역사</a></p>
+            <p><a href="javascript:;">주차안내</a></p>
+        </li>
+        <li>
+            <h2><a href="permanent_exhibit.html">상설전시</a></h2>
+            <p><a href="javascript:;">편의시설</a></p>
+            <p><a href="javascript:;">전시실 안내</a></p>
+            <p><a href="javascript:;">전시실 소개</a></p>
+            <p><a href="javascript:;">소장유물</a></p>
+        </li>
+        <li>
+            <h2><a href="sub_spe.html">기획전시</a></h2>
+            <p><a href="javascript:;">특별전시</a></p>
+            <p><a href="javascript:;">온라인박물관</a></p>
+            <p><a href="javascript:;">전시도록</a></p>
+        </li>
+        <li>
+            <h2><a href="programm.html">프로그램</a></h2>
+            <p><a href="javascript:;">공연</a></p>
+            <p><a href="javascript:;">행사</a></p>
+            <p><a href="javascript:;">공지사항</a></p>
+        </li>
+        <li>
+            <h2><a href="goods.html">문화상품</a></h2>
+            <p><a href="javascript:;">New&Best</a></p>
+            <p><a href="javascript:;">Special</a></p>
+            <p><a href="javascript:;">찾아오는길</a></p>
+        </li>
+    </ul>
+    </div>
+    <div class="wrap2">
+        <div class="privacy2">
+            <a href="javascript:;"><strong>개인정보처리방침</strong></a>
+            <a href="javascript:;"><span>고객지원 |</span></a>
+            <a href="javascript:;"
+            ><span>영상정보처리기기 운영관리방침 |</span></a
+            >
+            <a href="javascript:;"><span>공공누리 |</span></a>
+            <a href="javascript:;"><span>청렴투명신고</span></a>
+        </div>
+        <ul class="sns2">
+            <li>
+            <a href="javascript:;"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+            <a href="javascript:;"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+            <a href="javascript:;"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+            <a href="javascript:;"><i class="fa-solid fa-blog"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!----------- 비주얼 ----------->
+<section id="visual">
+    <h2>상설전시</h2>
+</section>
+<!----------- 컨테이너 ----------->
+    <!-- (컨테이너1) 편의시설 안내 -->
+    <section id="floorInfo">
+        <div>
+            <div class="link">
+                <h2>지도</h2>
+            </div>
+            <div class="convenient">
+                <div>
+                    <div class="convenient_txt">
+                        <h3>편의시설</h3>
+                        <p>아이콘 눌러 상세 위치 보기</p>
+                    </div>
+                    <ul class="convenient_icon">
+                        <li>
+                            <a href="javascript:;"><i class="fa-solid fa-restroom"></i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><i class="fa-solid fa-elevator"></i></a>
+                        </li>
+                        <li><a href="javascript:;"><i class="fa-solid fa-couch"></i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><i class="fa-solid fa-gift"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="convenient_img">
+                    <li>
+                        <img src="img/permanent_floor_map_restroom.jpg">
+                    </li>
+                    <li>
+                        <img src="img/permanent_floor_map_elevator.jpg">
+                    </li>
+                    <li>
+                        <img src="img/permanent_floor_map_couch.jpg">
+                    </li>
+                    <li>
+                        <img src="img/permanent_floor_map_gift.jpg">
+                    </li>
+                    <li>
+                        <img src="img/permanent_floor_map.jpg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- (컨테이너2) 전시실 안내 -->
+    <section id="roomAnnounce">
+        <h2>전시실 안내</h2>
+        <ul>
+            <li><p><a href="javascript:;">신석기실</a></p></li>
+            <li><p><a href="javascript:;">구석기실</a></p></li>
+            <li><p><a href="javascript:;">청동기실</a></p></li>
+        </ul>
+    </section>
+    <!-- (컨테이너3)전시실 소개 -->
+    <section id="roomIntro">
+        <h2>전시실 소개</h2>
+        <div class="roomintro_wrap">
+            <ul class="roomintro_vid">
+                <li>
+                    <iframe src="https://www.youtube.com/embed/u11urxWk2wk?si=Z3dRjh_9dNBpQulC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe src="https://www.youtube.com/embed/FVTvWd5m0wo?si=pcI5Kcuha7M_jV9_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe src="https://www.youtube.com/embed/3WfsVA0cKqA?si=SAnagwDKhfwWGg4V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </li>
+            </ul>
+            <ul class="roomintro_txt">
+                <li>
+                    <span class="highlight">신</span>석기실에서는 빙하기가 끝나고 바뀐 환경에 적응하면서 정착 생활을 시작한 신석기시대 사람들의 생활상을 살펴볼 수 있다. 신석기시대가 시작되는 약 1만 년 전 무렵의 인류는 지구의 기온이 상승하여 물이 육지로 유입되면서, 바다 자원을 적극적으로 이용할 수 있게 되었다. 유적에서 출토된 낚싯바늘을 비롯한 다양한 어로 도구들로 당시의 어로 생활을 추정해 볼 수 있고 갈판, 갈돌, 괭이, 낫 등의 석기를 보면 신석기시대 사람들의 생계와 경제 활동 방법을 알 수 있다. 이곳에서는 시기와 지역에 따라 다양하게 만들어진 토기들을 비교해 볼 수 있으며, 꾸미개나 토우와 같은 예술품 등에서 신석기인의 정신세계도 엿볼 수 있다.
+                </li>
+                <li>
+                    <span class="highlight">구</span>
+                    석기실은 구석기시대 사람들의 삶과 문화를 만날 수 있는 공간이다. 구석기실의 도입부에서는 석기의 제작에 필요한 석재와 돌을 떼어 내는 방법을 소개하였다. 또 인류의 진화에 따라 석기 만드는 기술이 발전했음을 보여 주기 위해 한반도 각지에서 출토된 석기를 종류와 형식에 따라 구분하여 전시하였다. 크고 거칠었던 석기가 작고 정교하며 규격화된 석기로 발전, 변화되는 모습을 볼 수 있다. 그 밖에도 구석기인의 예술과 정신세계를 보여 주는 자료, 구석기시대가 끝나 갈 무렵 새롭게 등장한 간석기 등을 확인할 수 있다.
+                </li>
+                <li>
+                    <span class="highlight">청</span>동기·고조선실은 발달된 농경 기술을 기반으로 한 청동기시대의 생활 모습과 청동이라는 금속 제품이 유입되면서 변화하는 문화상을 중심으로 구성하였다. 농사를 짓는 데 사용한 간석기와 논과 밭에서 수확한 곡식을 조리하고 저장하는 데 쓰인 다양한 토기에서 당시 농경사회의 모습을 살펴볼 수 있다. 또한 대표 유물인 동검을 중심으로 요령식 동검 문화遼寧式銅劍文化와 한국식 동검 문화韓國式銅劍文化를 비교하여 전시하였다. 기원전 4세기 무렵에는 철기가 나타나면서 계급 분화가 촉진되는데, 단단하고 예리한 철제 농기구와 무기의 사용, 토기의 변화로 당시의 사회상을 엿볼 수 있다.
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- (컨테이너4)소장유물 -->
+    <section id="collectionRelics">
+        <h2>소장유물</h2>
+        <div class="relics_wrap">
+            <div class="relics_intro">
+                <!-- 유물 이름 -->
+                <ul class="relics_intro_name">
+                    <li><div></div>주먹도끼</li>
+                    <li><div></div>빗살무늬토기</li>
+                    <li><div></div>호우총 청동그릇</li>
+                </ul>
+                <ul class="relics_intro_img">
+                    <li><a href="javascript:;"><img src="img/permanent_collect_prehis_1.png"></a></li>
+                    <li><a href="javascript:;"><img src="img/permanent_collect_prehis_2.png"></a></li>
+                    <li><a href="javascript:;"><img src="img/permanent_collect_prehis_3.png"></a></li>
+                </ul>
+            </div>
+            <p class="prehis_1">
+                <span class="highlight">주</span>
+                먹도끼는 끝부분이 뾰족한 타원형 석기로, 뭉툭한 부분을 손으로 쥐고 여러 용도로 사용했던 구석기시대 도구입니다. 돌의 한쪽을 떼어 낸 뒤 반대편을 다시 떼어 내 지그재그 모양의 양면 날을 만들었습니다. 구석기인들은 미리 전체적인 모양을 생각하고 계획을 세워 원하는 형태의 주먹도끼를 제작했습니다. 주먹도끼는 서유럽, 중동, 아프리카, 영국, 인도, 동아시아에 이르는 넓은 지역에서 발견되며, 대략 170만 년 전부터 10만 년 전까지 사용되었습니다. 주먹도끼를 만든 고인류는 호모 에렉투스(Homo erectus)로 알려져 있습니다.<br>
+                <span class="relics_intro_detail">
+                    이 주먹도끼는 연천 전곡리에서 출토된 것입니다. 1940년대 초반 미국 고고학자 모비우스(H. L. Movius)는 구석기문화를 유럽의 주먹도끼 문화권과 아시아의 찍개 문화권으로 분류하고, 동아시아 지역에는 주먹도끼가 없다고 주장했습니다. 그의 학설은 동아시아 지역이 주먹도끼가 발견되는 유럽・아프리카・중동 지역에 비해 문화적・인종적으로 뒤처졌다는 의미였습니다. 그러나 1978년 전곡리에서 동아시아 최초로 주먹도끼가 발견되자 세계 고고학계는 크게 놀랐고, 이러한 이분법적 이론은 폐기되었습니다.
+                </span>
+            </p>
+            <p class="prehis_2">
+                <span class="highlight">빗</span>살무늬 토기는 우리나라 신석기시대의 대표적인 토기로, 지금으로부터 약 6,000년 전 무렵에 만들어졌습니다. 전체적으로 V자 모양이고, 아가리・몸통・바닥 세 부분으로 구분해 다양한 무늬를 채워 넣었습니다. 신석기시대 토기에는 기하학무늬, 식물무늬, 동물무늬 등이 표현되어 있습니다. 무늬를 장식할 때는 토기 겉면에 그리거나 새겨 넣거나 점토 띠를 덧붙이는 방식을 이용했습니다. 중국 화중華中 이남, 인도, 메소포타미아 지역에서는 동식물이나 기하학무늬가 주류를 이룹니다. 이와 달리 우리나라와 중국 동북 지역, 시베리아, 북유럽 등지에서는 무늬를 새겨 넣는 방식을 주로 사용했습니다. 점토 띠를 붙이는 방식은 우리나라와 시베리아, 일본열도에서 확인됩니다. 좌우 대칭과 균형감을 고려한 무늬 구성은 신석기인의 뛰어난 공간 구성력과 미적 감각, 수준 높은 정신세계를 보여 줍니다. 특히 빗살무늬 토기에서 볼 수 있는 여러 기하학무늬는 신석기인의 자연관이 추상적으로 표현된 것으로 여겨집니다.<br>
+                <span class="relics_intro_detail">
+                    신석기인은 우연한 기회에 점토를 불에 구우면 단단해진다는 사실을 깨닫고 이러한 성질을 이용해 토기를 발명해 냈습니다. 토기를 사용하면서 음식을 저장하고 조리할 수 있게 되었고, 정착 생활을 하며 이전까지 이용하지 않던 새로운 식물 자원을 활용하는 등 인류의 생활 방식에 큰 변화가 일어났습니다.
+                </span>
+            </p>
+            <p class="prehis_3">
+                <span class="highlight">공</span>주 노서동 140호분의 남쪽 무덤은 고구려 광개토대왕과 관련한 청동 그릇이 출토되어 ‘호우총壺衧塚’이라 불립니다. ‘호우壺衧’는 반구형의 몸체에 납작한 형태의 뚜껑으로 이루어졌으며, 굽이 있는 바닥에는 ‘乙卯年國罡上廣開土地好太王壺杅十을묘년국강상광개토지호태왕호우십’이라는 글자와 ‘#’가 돋을새김되어 있습니다. ‘국강상’은 왕의 무덤이 있는 지역을 나타내며, ‘광개토지호태왕’은 광개토대왕이 죽은 뒤 영토를 널리 개척한 업적을 칭송해 붙인 시호諡號라고 할 수 있습니다. 또한 ‘을묘년’은 415년(장수왕 3)으로, 3년 전에 돌아가신 광개토대왕을 추모하기 위해 만든 것이라고 해석할 수 있습니다. ‘십十’ 자에 대해서는 여러 설이 있지만 열 개 혹 열 번째를 의미하는 것으로, 적어도 10개의 호우를 만들었다고 추정하기도 합니다. 위쪽 중앙의 ‘#’ 역시 아직까지 의미를 정확히 알 수 없는 표식입니다.<br>
+                <span class="relics_intro_detail">
+                    호우총에서 금관은 나오지 않았지만, 시신의 머리 오른쪽에 바르게 놓여 있던 청동 그릇은 고구려와 신라 역사의 중요한 단서를 품고 있습니다. 기록에 따르면 광개토대왕은 신라 내물왕의 구원 요청을 받고 5만 대군을 보내어 주변국의 위협으로부터 신라를 구했습니다. 따라서 광개토대왕을 기념하기 위한 물건을 신라에 보냈을 개연성은 충분합니다. 어쩌면 을묘년(415)에 거행된 광개토대왕의 추모 행사에 참석했던 신라 사신이 이 그릇을 받아 와 대대로 간직하다가 무덤에 넣은 것은 아닐까요?
+                </span>
+            </p>
+            <div class="more">
+                <a href="#">+</a>
+            </div>
+        </div>
+    </section>
+<!----------- 푸터 ----------->
+    <footer>
+        <a href="index.html"><img src="img/logo_bk.png" /></a>
+        <p>우)04383 서울특별시 용산구 서빙고로 137(용산동6가 168-6)</p>
+        <div class="tel">
+            <p><srong>TEL.</srong>02-2077-9000</p>
+            <ul class="sns">
+                <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-blog"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-comment"></i></a>
+                </li>
+            </ul>
+        </div>
+        <ul class="privacy">
+            <li>
+                <strong>개인정보처리방침</strong>
+                <span>전자우편주소 수집거부 |</span>
+                <span>영상정보처리기기 운영관리방침 |</span>
+                <span>공공누리 |</span>
+                <span>청렴투명신고 |</span>
+                <span>정보공개</span>
+            </li>
+            <li>
+                <p>@ COPYRIGHT <small> All Rights Reserved.</small></p>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

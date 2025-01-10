@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>특별전시</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/hfn.css">
+        <link rel="stylesheet" href="css/sub_spe.css" />
+        <link rel="stylesheet" href="css/sub_spe_tablet.css" />
+        <link rel="stylesheet" href="css/sub_spe_mobile.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/jquery.transform2d.js"></script>
+        <script src="js/hdn.js"></script>
+        <script src="js/suv_spe.js"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <h1>
+                <a href="index.html">
+                    <img src="img/logo.png">
+                </a>
+            </h1>
+            <ul>
+                <li><a href="intro.html">소개</a></li>
+                <li><a href="permanent_exhibit.html">상설전시</a></li>
+                <li><a href="sub_spe.html">특별전시</a></li>
+                <li><a href="programm.html">프로그램</a></li>
+                <li><a href="goods.html">문화상품</a></li>
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+        </header>
+
+        <!-- visual -->
+
+        <div id="visual"><h2>특별전시</h2></div>
+
+        <!-- navigation -->
+
+        <nav>
+            <div class="close">
+                <img src="img/logo.png" />
+                <i class="xmark fa-solid fa-xmark"></i>
+            </div>
+            <p class="sitemap">Site map</p>
+            <div class="center">
+            <div class="search">
+                <h2>국립중앙박물관</h2>
+                <form class="search-box" action="" method="get">
+                <input
+                    class="search-txt"
+                    type="text"
+                    name=""
+                    placeholder="검색어를 입력하세요."
+                />
+                <button class="search-btn" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                </form>
+            </div>
+            <ul class="menu">
+                <li>
+                    <h2><a href="intro.html">소개</a></h2>
+                    <p><a href="javascript:;">인사말</a></p>
+                    <p><a href="javascript:;">비전</a></p>
+                    <p><a href="javascript:;">역사</a></p>
+                    <p><a href="javascript:;">주차안내</a></p>
+                </li>
+                <li>
+                    <h2><a href="permanent_exhibit.html">상설전시</a></h2>
+                    <p><a href="javascript:;">편의시설</a></p>
+                    <p><a href="javascript:;">전시실 안내</a></p>
+                    <p><a href="javascript:;">전시실 소개</a></p>
+                    <p><a href="javascript:;">소장유물</a></p>
+                </li>
+                <li>
+                    <h2><a href="sub_spe.html">기획전시</a></h2>
+                    <p><a href="javascript:;">특별전시</a></p>
+                    <p><a href="javascript:;">온라인박물관</a></p>
+                    <p><a href="javascript:;">전시도록</a></p>
+                </li>
+                <li>
+                    <h2><a href="programm.html">프로그램</a></h2>
+                    <p><a href="javascript:;">공연</a></p>
+                    <p><a href="javascript:;">행사</a></p>
+                    <p><a href="javascript:;">공지사항</a></p>
+                </li>
+                <li>
+                    <h2><a href="goods.html">문화상품</a></h2>
+                    <p><a href="javascript:;">New&Best</a></p>
+                    <p><a href="javascript:;">Special</a></p>
+                    <p><a href="javascript:;">찾아오는길</a></p>
+                </li>
+            </ul>
+            </div>
+            <div class="wrap2">
+                <div class="privacy2">
+                    <a href="javascript:;"><strong>개인정보처리방침</strong></a>
+                    <a href="javascript:;"><span>고객지원 |</span></a>
+                    <a href="javascript:;"
+                    ><span>영상정보처리기기 운영관리방침 |</span></a
+                    >
+                    <a href="javascript:;"><span>공공누리 |</span></a>
+                    <a href="javascript:;"><span>청렴투명신고</span></a>
+                </div>
+                <ul class="sns2">
+                    <li>
+                    <a href="javascript:;"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                    <a href="javascript:;"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                    <a href="javascript:;"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                    <a href="javascript:;"><i class="fa-solid fa-blog"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section>
+            <!-- con1 -->
+            <div class="sec1">
+                <h2 class="sub_spe_con_title">특별전시</h2>
+                <div class="con1">
+                    <div class="extab">
+                        <h2>
+                            <span class="now-1">현재전시</span><span>|</span
+                            ><span class="plan-1">예정전시</span><span>|</span
+                            ><span class="late-1">지난전시</span><span>|</span
+                            ><span
+                                >더보기 </i
+                            ></span>
+                        </h2>
+
+                        <form class="search-box1" action="" method="get">
+                            <input
+                                class="search-txt1"
+                                type="text"
+                                name=""
+                                placeholder="전시명을 검색하세요."
+                            />
+                            <button class="search-btn1" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="four">
+                        <!--con1부분 예정전시-->
+
+                        <ul class="plan">
+                            <li class="solbox jbox1">
+                                <div class="toppic">
+                                    <img src="img/sub_sp_plan1-1.png" />
+                                </div>
+                                <div class="extxt">
+                                    <div class="more">
+                                        <a href="#">
+                                            Web site
+                                            <i
+                                                class="fa-solid fa-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                    <div class="smallbox">예정전시</div>
+                                    <h2>비엔나 1900, 꿈꾸는 예술가들</h2>
+                                    <p>
+                                        19세기 말 다양한 예술 운동의 배경이
+                                        되었던 비엔나의 특징을 문화사적 흐름으로
+                                        조명
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="solbox jbox2">
+                                <div class="toppic">
+                                    <img src="img/plan2.PNG" />
+                                </div>
+                                <div class="extxt">
+                                    <div class="more">
+                                        <a href="#">
+                                            Web site
+                                            <i
+                                                class="fa-solid fa-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                    <div class="smallbox">예정전시</div>
+                                    <h2>조선 전기 미술(가제)</h2>
+                                    <p>
+                                        조선 전기 15-16세기의 회화, 도자,
+                                        불교미술을 종합적으로 살펴보는 대규모
+                                        특별전
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="solbox jbox3">
+                                <div class="toppic">
+                                    <img src="img/sub_next.png" />
+                                </div>
+                                <div class="extxt">
+                                    <div class="more">
+                                        <a href="#" target="_blank">
+                                            Web site
+                                            <i
+                                                class="fa-solid fa-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                    <div class="smallbox">예정전시</div>
+                                    <h2>다음 전시 준비중입니다.</h2>
+                                    <p>'COMING SOON'</p>
+                                </div>
+                            </li>
+
+                            <li class="solbox jbox4">
+                                <div class="toppic">
+                                    <img src="img/sub_next.png" />
+                                </div>
+                                <div class="extxt">
+                                    <div class="more">
+                                        <a href="#" target="_blank">
+                                            Web site
+                                            <i
+                                                class="fa-solid fa-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                    <div class="smallbox">예정전시</div>
+                                    <h2>다음 전시 준비중입니다.</h2>
+                                    <p>'COMING SOON'</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!--con1부분 지난전시-->
+
+                        <ul class="late">
+                            <li class="solbox jbox1">
+                                <div class="toppic">
+                                    <img src="img/late1.PNG" />
+                                </div>
+                                <div class="extxt">
+                                    <div class="more">
+                                        <a href="#">
+                                            Web site
+                                            <i
+                                                class="fa-solid fa-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                    <div class="smallbox">지난전시</div>
+                                    <h2>갑진년맞이 용을 찾아라</h2>
+                                    <p>
+                                        2024년 갑진년甲辰年 청룡의 해를 맞이하여
+                                        상설전시관에서 용과 관련된 전시품 15건을
+                                        소개하는 전시
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="solbox jbox2">
+                                <div class="toppic">
+                                    <img src="img/late2-2.PNG" />
+                                </div>
+                                <div class="extxt">
+                                    <div class="more">
+                                        <a href="#">
+                                            Web site
+                                            <i
+                                                class="fa-solid fa-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                    <div class="smallbox">지난전시</div>
+                                    <h2>심화전 <옛 그림 속 꽃과 나비></h2>
+                                    <p>
+                                        나비와 꽃을 소재로 한 소장 회화를
+                                        선정하여 옛사람들의 나비와 꽃에 대한
+                                        인식과 표현법 소개
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="solbox jbox3">
+                                <div class="toppic">
+                                    <img src="img/late3.PNG" />
+                                </div>
+                                <div class="extxt">
+                                    <div class="more">
+                                        <a href="#">
+                                            Web site
+                                            <i
+                                                class="fa-solid fa-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                    <div class="smallbox">지난전시</div>
+                                    <h2>영원한 삶의 집, 아스타나 고분</h2>
+                                    <p>
+                                        전시품을 무덤 내 공간에 따라 구성하여
+                                        투루판 지역의 독특한 장례문화를 소개.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="solbox jbox4">
+                                <div class="toppic">
+                                    <img src="img/sub_sp_late1-1.PNG" />
+                                </div>
+                                <div class="extxt">
+                                    <div class="more">
+                                        <a href="#">
+                                            Web site
+                                            <i
+                                                class="fa-solid fa-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                    <div class="smallbox">지난전시</div>
+                                    <h2>한일중 공동특별전 '동아시아의 칠기'</h2>
+                                    <p>
+                                        동아시아의 칠기’전은 한일중 국립박물관
+                                        관장회의와 연계하여 개최하는 전시입니다.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!--con1부분 현재전시-->
+
+                        <ul class="now">
+                            <li class="solbox jbox1">
+                                <div class="toppic">
+                                    <img src="img/sun_sp_now2-1.PNG" />
+                                </div>
+                                <div class="extxt">
+                                    <div class="more">
+                                        <a
+                                            href="https://www.museum.go.kr/site/main/exhiSpecialTheme/view/current?exhiSpThemId=1842184&listType=list"
+                                            target="_blank"
+                                        >
+                                            Web site
+                                            <i
+                                                class="fa-solid fa-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                    <div class="smallbox">현재전시</div>
+                                    <h2>우리가 인디언으로 알던 사람들</h2>
+                                    <p>
+                                        우리가 인디언으로 알던 북미 원주민은
+                                        미국 대륙에만 570여 개의 부족이 있으며
+                                        지역에 따라 다양한 문화를 가지고
+                                        있습니다.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="solbox jbox2">
+                                <div class="toppic">
+                                    <img src="img/now2.PNG" />
+                                </div>
+                                <div class="extxt">
+                                    <div class="more">
+                                        <a
+                                            href="https://www.museum.go.kr/site/main/exhiSpecialTheme/view/current?exhiSpThemId=2024922&listType=list"
+                                            target="_blank"
+                                        >
+                                            Web site
+                                            <i
+                                                class="fa-solid fa-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                    <div class="smallbox">현재전시</div>
+                                    <h2>국보순회전: 모두의 곁으로</h2>
+                                    <p>
+                                        <대한민국 어디서나, 함께 누리는 우리
+                                        문화> 국보급 대표전시품의 지역 순회전시
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="solbox jbox3">
+                                <div class="toppic">
+                                    <img src="img/now3.PNG" />
+                                </div>
+                                <div class="extxt">
+                                    <div class="more">
+                                        <a
+                                            href="https://www.museum.go.kr/site/main/exhiSpecialTheme/view/current?exhiSpThemId=1855915&listType=list"
+                                            target="_blank"
+                                        >
+                                            Web site
+                                            <i
+                                                class="fa-solid fa-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                    <div class="smallbox">현재전시</div>
+                                    <h2>달항아리를 만든 곳, 금사리</h2>
+                                    <p>
+                                        18세기 전반 운영된 경기도 광주 금사리
+                                        관요 수습 파편과 완형을 함께 전시
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="solbox jbox4">
+                                <div class="toppic">
+                                    <img src="img/true.PNG" />
+                                </div>
+                                <div class="extxt">
+                                    <div class="more">
+                                        <a
+                                            href="https://www.museum.go.kr/site/main/exhiSpecialTheme/view/current?exhiSpThemId=650312&listType=list"
+                                            target="_blank"
+                                        >
+                                            Web site
+                                            <i
+                                                class="fa-solid fa-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                    <div class="smallbox">현재전시</div>
+                                    <h2>영산靈山의 모임, 진천 영수사 괘불</h2>
+                                    <p>
+                                        국립중앙박물관이 개최하는 열 아홉번째
+                                        괘불전으로 보물 '진천 영수사 괘불'을
+                                        소개하는 전시
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- con2 -->
+            <h2 class="sub_spe_con2_title">온라인 전시관</h2>
+            <div class="con2">
+                <ul class="onlineshow">
+                    <li class="sol_bo disital">디지털 영상관</li>
+                    <li class="sol_bo virtual">VR관</li>
+                </ul>
+
+                <!-- 디지털관 -->
+                <ul class="onlin content">
+                    <li class="non">
+                        <a
+                            href="https://www.youtube.com/watch?v=pVZVdXc3oq0&t=55s"
+                            ><img src="img/sub_sp_digital1.PNG"
+                        /></a>
+                        <h4>[온라인 실감콘텐츠] 왕의행차, 백성과 함께하다</h4>
+                        <p>온라인 실감 콘텐츠</p>
+                    </li>
+                    <li class="non-1">
+                        <a
+                            href="https://www.youtube.com/watch?v=sdGV0_2Q0KE&t=15s"
+                            ><img src="img/sub_sp_digital2.PNG"
+                        /></a>
+                        <h4>
+                            [온라인 실감콘텐츠] 영혼의 여정, 아득한 윤회의 길을
+                            걷다
+                        </h4>
+                        <p>온라인 실감 콘텐츠</p>
+                    </li>
+                    <li class="non">
+                        <a
+                            href="https://www.youtube.com/watch?v=vxLLHdQe4s4&t=338s"
+                            ><img src="img/sub_sp_digital3.PNG"
+                        /></a>
+                        <h4>[온라인 실감콘텐츠] 신선들의 잔치</h4>
+                        <p>온라인 실감 콘텐츠</p>
+                    </li>
+                </ul>
+                <ul class="onlin content left_1200">
+                    <li class="non">
+                        <a
+                            href="https://www.youtube.com/watch?v=pVZVdXc3oq0&t=55s"
+                            ><img src="img/sub_sp_digital1.PNG"
+                        /></a>
+                        <h4>[온라인 실감콘텐츠] 왕의행차, 백성과 함께하다</h4>
+                        <p>온라인 실감 콘텐츠</p>
+                    </li>
+                    <li class="non">
+                        <a
+                            href="https://www.youtube.com/watch?v=sdGV0_2Q0KE&t=15s"
+                            ><img src="img/sub_sp_digital2.PNG"
+                        /></a>
+                        <h4>
+                            [온라인 실감콘텐츠] 영혼의 여정, 아득한 윤회의 길을
+                            걷다
+                        </h4>
+                        <p>온라인 실감 콘텐츠</p>
+                    </li>
+                    <li class="non-1"> 
+                        <a
+                            href="https://www.youtube.com/watch?v=vxLLHdQe4s4&t=338s"
+                            ><img src="img/sub_sp_digital3.PNG"
+                        /></a>
+                        <h4>[온라인 실감콘텐츠] 신선들의 잔치</h4>
+                        <p>온라인 실감 콘텐츠</p>
+                    </li>
+                </ul>
+
+                <!-- vr관 -->
+                <ul class="onlin real">
+                    <li class="non">
+                        <a
+                            href="https://www.youtube.com/watch?v=pVZVdXc3oq0&t=55s"
+                            ><img src="img/sub_sp_vr1.PNG"
+                        /></a>
+                        <h4>[VR] 조선의 승려장인</h4>
+                        <p>VR관</p>
+                    </li>
+                    <li class="non-1">
+                        <a
+                            href="https://www.youtube.com/watch?v=sdGV0_2Q0KE&t=15s"
+                            ><img src="img/sub_sp_vr2.PNG"
+                        /></a>
+                        <h4>[VR] 조선 사람들의 꿈, 평생도</h4>
+                        <p>VR관</p>
+                    </li>
+                    <li class="non">
+                        <a
+                            href="https://www.youtube.com/watch?v=vxLLHdQe4s4&t=338s"
+                            ><img src="img/sub_sp_vr3.PNG"
+                        /></a>
+                        <h4>[VR] 중국 고대 청동기_신에서 인간으로</h4>
+                        <p>VR관</p>
+                    </li>
+                </ul>
+                <div class="line">
+                    <div class="fifty"></div>
+                    <div class="fifty-1"></div>
+                </div>
+            </div>
+
+            <!-- con3 -->
+
+            <div class="con3">
+                <h2 class="sub_spe_con3_title">전시도록</h2>
+                <div class="dorok_wrap">
+                    <div class="firdorok_wrap">
+                        <div class="firdorok firdorok_0">
+                            <a
+                                href="https://www.museum.go.kr/site/main/archive/report/article_19254"
+                                ><img
+                                    class="dorok1"
+                                    src="img/sub_sp_dorok1.PNG"
+                            /></a>
+
+                            <div class="dorok_txt">
+                                <h3>
+                                    합스부르크 600년,<br />
+                                    매혹의 걸작들
+                                </h3>
+                                <p>
+                                    <strong>발행기관</strong>
+                                    <span> 국립중앙박물관</span>
+                                </p>
+                                <p>
+                                    <strong>발행연도</strong>
+                                    <span> 2022년</span>
+                                </p>
+                                <p>
+                                    <strong>사이즈</strong>
+                                    <span> 222*280mm</span>
+                                </p>
+                                <p>
+                                    <strong>페이지 수</strong>
+                                    <span> 296쪽</span>
+                                </p>
+                                <p>
+                                    <strong>가격</strong>
+                                    <span> 39,000원</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="firdorok firdorok_1">
+                            <a
+                                href="https://www.museum.go.kr/site/main/archive/report/article_19255"
+                                ><img
+                                    class="dorok1"
+                                    src="img/sub_sp_dorok2.PNG"
+                            /></a>
+
+                            <div class="dorok_txt">
+                                <h3>
+                                    거장의 시선, 사람을 향하다 - 영국
+                                    내셔널갤러리 명화전
+                                </h3>
+                                <p>
+                                    <strong>발행기관</strong>
+                                    <span> 국립중앙박물관</span>
+                                </p>
+                                <p>
+                                    <strong>발행연도</strong>
+                                    <span> 2023년</span>
+                                </p>
+                                <p>
+                                    <strong>사이즈</strong>
+                                    <span> 222*280mm</span>
+                                </p>
+                                <p>
+                                    <strong>페이지 수</strong>
+                                    <span> 240쪽</span>
+                                </p>
+                                <p>
+                                    <strong>가격</strong>
+                                    <span> 38,000원</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="firdorok firdorok_2">
+                            <a
+                                href="https://www.museum.go.kr/site/main/archive/report/article_19254"
+                                ><img
+                                    class="dorok1"
+                                    src="img/sub_sp_dorok3.PNG"
+                            /></a>
+
+                            <div class="dorok_txt">
+                                <h3>
+                                    영원한 여정, 특별한 동행 상형토기와 토우
+                                    장식 토기
+                                </h3>
+                                <p>
+                                    <strong>발행기관</strong>
+                                    <span> 국립중앙박물관</span>
+                                </p>
+                                <p>
+                                    <strong>발행연도</strong>
+                                    <span> 2023년</span>
+                                </p>
+                                <p>
+                                    <strong>사이즈</strong>
+                                    <span> 222*280mm</span>
+                                </p>
+                                <p>
+                                    <strong>페이지 수</strong>
+                                    <span> 328쪽</span>
+                                </p>
+                                <p>
+                                    <strong>가격</strong>
+                                    <span> 32,000원</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="firdorok firdorok_3">
+                            <a
+                                href="https://www.museum.go.kr/site/main/archive/report/article_19254"
+                                ><img
+                                    class="dorok1"
+                                    src="img/sub_sp_dorok4.PNG"
+                            /></a>
+
+                            <div class="dorok_txt">
+                                <h3>아스테카, 태양을 움직인 사람들</h3>
+                                <p>
+                                    <strong>발행기관</strong>
+                                    <span> 국립중앙박물관</span>
+                                </p>
+                                <p>
+                                    <strong>발행연도</strong>
+                                    <span> 2022년</span>
+                                </p>
+                                <p>
+                                    <strong>사이즈</strong>
+                                    <span> 222*280mm</span>
+                                </p>
+                                <p>
+                                    <strong>페이지 수</strong>
+                                    <span> 336쪽</span>
+                                </p>
+                                <p>
+                                    <strong>가격</strong>
+                                    <span> 35,000원</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="dorok2_wrap">
+                        <li class="dorok2">
+                            <img class="dorok2-1" src="img/sub_sp_dorok2.PNG" />
+                            <p>
+                                거장의 시선, 사람을 향하다 - 영국 내셔널갤러리
+                                명화전
+                            </p>
+                        </li>
+                        <li class="dorok3">
+                            <img class="dorok3-1" src="img/sub_sp_dorok3.PNG" />
+                            <p>
+                                영원한 여정, 특별한 동행 상형토기와 토우 장식
+                                토기
+                            </p>
+                        </li>
+                        <li class="dorok4">
+                            <img class="dorok4-1" src="img/sub_sp_dorok4.PNG" />
+                            <p>아스테카, 태양을 움직인 사람들</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <footer>
+            <a href="index.html"><img src="img/logo_bk.png" /></a>
+            <p>우)04383 서울특별시 용산구 서빙고로 137(용산동6가 168-6)</p>
+            <div class="tel">
+                <p><srong>TEL.</srong>02-2077-9000</p>
+                <ul class="sns">
+                    <li>
+                        <a href="javascript:;"
+                            ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"
+                            ><i class="fa-brands fa-youtube"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"
+                            ><i class="fa-brands fa-facebook"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"
+                            ><i class="fa-solid fa-blog"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"
+                            ><i class="fa-brands fa-twitter"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"
+                            ><i class="fa-regular fa-comment"></i
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="pri">
+                <li>
+                    <strong>개인정보처리방침</strong>
+                    <span>전자우편주소 수집거부 |</span>
+                    <span>영상정보처리기기 운영관리방침 |</span>
+                    <span>공공누리 |</span>
+                    <span>청렴투명신고 |</span>
+                    <span>정보공개</span>
+                </li>
+                <li>
+                    <p>@ COPYRIGHT <small> All Rights Reserved.</small></p>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

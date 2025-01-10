@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박물관 소개</title>
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/hfn.css"> 
+    <link rel="stylesheet" href="css/intro.css">
+    <!-- 제이쿼리 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/hdn.js"></script>
+    <script src="js/intro.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="img/logo.png">
+            </a>
+        </h1>
+        <ul>
+            <li><a href="intro.html">소개</a></li>
+            <li><a href="permanent_exhibit.html">상설전시</a></li>
+            <li><a href="sub_spe.html">특별전시</a></li>
+            <li><a href="programm.html">프로그램</a></li>
+            <li><a href="goods.html">문화상품</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+    
+    <!-- navigation -->
+
+    <nav>
+        <div class="close">
+            <img src="img/logo.png" />
+            <i class="xmark fa-solid fa-xmark"></i>
+        </div>
+        <p class="sitemap">Site map</p>
+        <div class="center">
+        <div class="search">
+            <h2>국립중앙박물관</h2>
+            <form class="search-box" action="" method="get">
+            <input
+                class="search-txt"
+                type="text"
+                name=""
+                placeholder="검색어를 입력하세요."
+            />
+            <button class="search-btn" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            </form>
+        </div>
+        <ul class="menu">
+            <li>
+                <h2><a href="intro.html">소개</a></h2>
+                <p><a href="javascript:;">인사말</a></p>
+                <p><a href="javascript:;">비전</a></p>
+                <p><a href="javascript:;">역사</a></p>
+                <p><a href="javascript:;">주차안내</a></p>
+            </li>
+            <li>
+                <h2><a href="permanent_exhibit.html">상설전시</a></h2>
+                <p><a href="javascript:;">편의시설</a></p>
+                <p><a href="javascript:;">전시실 안내</a></p>
+                <p><a href="javascript:;">전시실 소개</a></p>
+                <p><a href="javascript:;">소장유물</a></p>
+            </li>
+            <li>
+                <h2><a href="sub_spe.html">기획전시</a></h2>
+                <p><a href="javascript:;">특별전시</a></p>
+                <p><a href="javascript:;">온라인박물관</a></p>
+                <p><a href="javascript:;">전시도록</a></p>
+            </li>
+            <li>
+                <h2><a href="programm.html">프로그램</a></h2>
+                <p><a href="javascript:;">공연</a></p>
+                <p><a href="javascript:;">행사</a></p>
+                <p><a href="javascript:;">공지사항</a></p>
+            </li>
+            <li>
+                <h2><a href="goods.html">문화상품</a></h2>
+                <p><a href="javascript:;">New&Best</a></p>
+                <p><a href="javascript:;">Special</a></p>
+                <p><a href="javascript:;">찾아오는길</a></p>
+            </li>
+        </ul>
+        </div>
+        <div class="wrap2">
+            <div class="privacy2">
+                <a href="javascript:;"><strong>개인정보처리방침</strong></a>
+                <a href="javascript:;"><span>고객지원 |</span></a>
+                <a href="javascript:;"
+                ><span>영상정보처리기기 운영관리방침 |</span></a
+                >
+                <a href="javascript:;"><span>공공누리 |</span></a>
+                <a href="javascript:;"><span>청렴투명신고</span></a>
+            </div>
+            <ul class="sns2">
+                <li>
+                <a href="javascript:;"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                <a href="javascript:;"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                <a href="javascript:;"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                <a href="javascript:;"><i class="fa-solid fa-blog"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 비쥬얼 -->
+    <div id="visual">
+        <h1>박물관 소개</h1>
+        <h2>국립중앙박물관에 오신 것을 환영합니다.</h2>
+    </div>
+    <!-- 콘1 -->
+    <div id="content">
+        <h3>소개</h3>
+        <ul>
+            <div class="center">
+                <il class="con1_1">
+                    <strong>
+                        안녕하십니까?
+                        국립중앙박물관장 입니다.<br><br>
+                        역사와 문화가 살아 숨 쉬고,과거와 현재, 미래가 공존하는 감동의 <br>
+                        공간인 국립중앙 박물관에 오신 것을 환영합니다.
+                        <br><br>
+                    </strong>
+                    시대와 주제별로 제시된 6개의 상설전시관, 다양한 내용을 선보이는 특별전시관,<br> 관람의 이해를 돕는 전시해설 프로그램, 오감으로 즐기고 배우는 어린이박물관, <br>다채로운 교육 프로그램, 첨단기술을 활용한 실감콘텐츠 등을 마음껏 누리고 즐기실 수 있습니다.<br><br>
+                    국립중앙박물관 전시실에는 아주 먼 옛날부터 가까운 옛날에 이르기까지 그리고<br> 세계 유산을 포함하여 수많은 사람들이 남긴 발자취와 전통이 여러분을 기다리고 있습니다.
+                </il>
+            </div>
+            <li class="con1_2">
+                <img src="img/intro_con1.jpg">
+            </li>
+        </ul>
+    </div>
+    <!-- 콘2 -->
+    <div id="content2">
+        <h3>비전</h3>
+            <ul>
+                <li>
+                    <div class="gr life">LIFE</div>
+                    <div class="co life1_1">- 삶과 함께하는 박물관
+                    <br>- 이용자와 교감하는 박물관
+                    <br>- 모두를 포용하는 박물관</div>
+                </li>
+                <li>
+                    <div class="co future">FUTURE</div>
+                    <div class="gr future1_1">- 미래를 선도하는 박물관<br>
+                    - 미래사회를 제시하는 박물관<br>
+                    - 이야기를 창조하는 박물관</div>
+                </li>
+                <li>
+                    <div class="gr world">WORLD</div>
+                    <div class="co world1_1">- 세계로 나아가는 박물관<br>
+                    - 인류보편가치를 지향하는 박물관<br>
+                    - 경계를 넘어서는 박물관</div>
+                </li>
+            </ul>
+    </div>
+    <!-- 콘3 -->
+    <div id="content3">
+        <h2>역사</h2>
+        <ul class="year">
+            <li><a href="javascript:;">1945~</a></li>
+            <li><a href="javascript:;">1955~</a></li>
+            <li><a href="javascript:;">1972~</a></li>
+            <li><a href="javascript:;">1986~</a></li>
+            <li><a href="javascript:;">1996~</a></li>
+            <li><a href="javascript:;">2005~</a></li>
+        </ul>
+        <!-- 연도 박스 -->
+        <div class="box1">
+            <div class="box1_1">
+                <h4>1945년대</h4>
+                <ul>
+                    <li>
+                        <div class="number">1945.12.03.</div>
+                        <div>국립박물관 개관(조선총독부박물관 인수)</div>
+                    </li>
+                    <li>
+                        <div class="number">1946. 04.</div>
+                        <div>공주분관 개관</div>
+                    </li>
+                    <li>
+                        <div class="number">1946. 04.</div>
+                        <div>개성박물관을 개성분관으로 흡수</div>
+                    </li>
+                    <li>
+                        <div class="number">1946. 05.</div>
+                        <div>경주 호우총과 은령총 발굴조사(최초 발굴조사)</div>
+                    </li>
+                    <li>
+                        <div class="number">1946.08.</div>
+                        <div>(중요출토품전) 개최(최초의 특별전)</div>
+                    </li>
+                    <li>
+                        <div class="number">1949.05.07.</div>
+                        <div>(미술강좌) 개설(최초의 사회교육강좌)</div>
+                    </li>
+                    <li>
+                        <div class="number">1949.12.12.</div>
+                        <div>국립박물관 직제 공포(대통령령 제234호)</div>
+                    </li>
+                </ul>
+                <h4>1950년대</h4>
+                <ul class="top">
+                    <li>
+                        <div class="number">1950.04.</div>
+                        <div>국립민족 박물관을 남산분관으로 통합</div>
+                    </li>
+                    <li>
+                        <div class="number">1950.12.</div>
+                        <div>한국전쟁으로 소장품 부산으로 임시 이전(광복동 사무실)</div>
+                    </li>
+                    <li>
+                        <div class="number">1953.08.</div>
+                        <div>부산에서 경복궁내 청사로 복귀</div>
+                    </li>
+                    <li>
+                        <div class="number">1954.01.</div>
+                        <div>남산분관으로 이전개관</div>
+                    </li>
+                </ul>    
+            </div>  
+        </div>
+        <div class="box2">
+            <div class="box2_2">
+                <h4>1950년대</h4>
+            <ul>
+                <li>
+                    <div class="number">1955.06.23.</div>
+                    <div>남산분관에서 덕수궁 석조전으로 이전 개관</div>
+                </li>
+                <li>
+                    <div class="number">1957.12.</div>
+                    <div>워싱턴 등 미국 8개 도시에서 한국 국보전<br>〈masterpieces from korean art〉개최(최초 국외전시)(~1959년 6월까지)</div>
+                </li>
+                <li>
+                    <div class="number">1959.10.</div>
+                    <div>1959. 10.- 경주 감은사지 발굴조사(최초 사찰유적 조사)</div>
+                </li>
+            </ul>
+            <h4>1960년대</h4>
+            <ul>
+                <li>
+                    <div class="number">1960.08.</div>
+                    <div>〈미술자료〉창간(최초 학술지)</div>
+                </li>
+                <li>
+                    <div class="number">1961.01.</div>
+                    <div>관리과, 고고과, 미술과로 직제 개편</div>
+                </li>
+                <li>
+                    <div class="number">1968.07.24.</div>
+                    <div>문화공보부 발족(대통령령 제3519호)</div>
+                </li>
+                <li>
+                    <div class="number">1969.05.</div>
+                    <div>덕수궁 미술관 통합</div>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="box3_3">
+                <h4>1970년대</h4>
+                <ul>
+                    <li>
+                        <div class="number">1972.07.19.</div>
+                        <div>국립박물관을 국립중앙박물관으로 명칭 변경</div>
+                    </li>
+                    <li>
+                        <div class="number">1972.08.25.</div>
+                        <div>경복궁으로 신축 이전 개관(현 국립민속박물관)</div>
+                    </li>
+                    <li>
+                        <div class="number">1972.11.</div>
+                        <div>국립중앙박물관 직제 개편(사무국과 학예연구실 신설)</div>
+                    </li>
+                    <li>
+                        <div class="number">1973.10.</div>
+                        <div>공주분관 이전 개관(공주시 중동)</div>
+                    </li>
+                    <li>
+                        <div class="number">1974.05.</div>
+                        <div>〈박병래 수집 이조도자전〉 개최(최초의 기증유물 특별전)</div>
+                    </li>
+                    <li>
+                        <div class="number">1975.07.02.</div>
+                        <div>경주분관 인왕동으로 이전 개관(현 박물관)</div>
+                    </li>
+                    <li>
+                        <div class="number">1975.08.20.</div>
+                        <div>지방분관을 소속박물관으로 개편</div>
+                    </li>
+                    <li>
+                        <div class="number">1976.02.</div>
+                        <div>보존과학실 개설</div>
+                    </li>
+                    <li>
+                        <div class="number">1977.04.08.</div>
+                        <div>〈국립박물관특설강좌〉 개설</div>
+                    </li>
+                    <li>
+                        <div class="number">1978.12.06.</div>
+                        <div>국립광주박물관 개관</div>
+                    </li>
+                    <li>
+                        <div class="number">1979.04.12.</div>
+                        <div>국립민속박물관을 중앙박물관 소속으로 흡수</div>
+                    </li>
+                </ul>
+                <h4>1980년대</h4>
+                <ul>
+                    <li>
+                        <div class="number">1980.12.</div>
+                        <div>동원 이홍근 수집 유물 기증(최대 수량 기증)</div>
+                    </li>
+                    <li>
+                        <div class="number">1984.11.02.</div>
+                        <div>국립진주박물관 개관</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box4">
+            <div class=box4_4>
+                <h4>1980년대</h4>
+                <ul>
+                    <li>
+                        <div class="number">1986.08.21.</div>
+                        <div>국립중앙박물관 이전 개관(구 중앙청)〈토요강좌〉 및 〈노인문화강좌〉 개설</div>
+                    </li>
+                    <li>
+                        <div class="number">1987.10.30.</div>
+                        <div>국립청주박물관 개관</div>
+                    </li>
+                    <li>
+                        <div class="number">1989.07.</div>
+                        <div>〈고고학지〉 창간</div>
+                    </li>
+                </ul>
+                <h4>1990년대</h4>
+                <ul>
+                    <li>
+                        <div class="number">1990.04.</div>
+                        <div>움직이는 박물관 개설(현 찾아가는 박물관)</div>
+                    </li>
+                    <li>
+                        <div class="number">1990.10.26.</div>
+                        <div>국립전주박물관 개관</div>
+                    </li>
+                    <li>
+                        <div class="number">1992.10.30.</div>
+                        <div>국립민속박물관 분리 직제 개편</div>
+                    </li>
+                    <li>
+                        <div class="number">1993.08.06.</div>
+                        <div>국립부여박물관 이전 개관(현 박물관)</div>
+                    </li>
+                    <li>
+                        <div class="number">1993.10.</div>
+                        <div>〈미술사학지〉 창간</div>
+                    </li>
+                    <li>
+                        <div class="number">1994.12.07.</div>
+                        <div>국립대구박물관 개관</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box5">
+            <div class="box5_5">
+                <h4>1990년대</h4>
+                <ul>
+                    <li>
+                        <div class="number">1996.03.</div>
+                        <div>국립중앙박물관 홈페이지 개설</div>
+                    </li>
+                    <li>
+                        <div class="number">1996.12.13.</div>
+                        <div>국립중앙박물관 이전 개관(현 국립고궁박물관)</div>
+                    </li>
+                    <li>
+                        <div class="number">1997.10.31.</div>
+                        <div>용산 새 국립중앙박물관 기공식</div>
+                    </li>
+                    <li>
+                        <div class="number">1997.11.</div>
+                        <div>제 1회 동원학술전국대회 개최</div>
+                    </li>
+                    <li>
+                        <div class="number">1998.01.15.</div>
+                        <div>국립진주박물관 재개관(임진왜란 전문 박물관)</div>
+                    </li>
+                    <li>
+                        <div class="number">1998.07.29.</div>
+                        <div>국립김해박물관 개관</div>
+                    </li>
+                    <li>
+                        <div class="number">1999.09.</div>
+                        <div>〈고고학지〉 창간</div>
+                    </li>
+                </ul>
+                <h4>2000년대</h4>
+                <ul>
+                    <li>
+                        <div class="number">2001.04.30.</div>
+                        <div>용산 새 국립중앙박물관 건립업무 국립중앙박물관으로 일원화</div>
+                    </li>
+                    <li>
+                        <div class="number">2001.06.15.</div>
+                        <div>국립전주박물관 개관</div>
+                    </li>
+                    <li>
+                        <div class="number">2001.09.29.</div>
+                        <div>직제개정(용산 새 박물관 개관준비요원 41명 증원)</div>
+                    </li>
+                    <li>
+                        <div class="number">2002.10.30.</div>
+                        <div>국립춘천박물관 개관</div>
+                    </li>
+                    <li>
+                        <div class="number">2003.03.</div>
+                        <div>국립중앙박물관 차관급 기관으로 승격</div>
+                    </li>
+                    <li>
+                        <div class="number">2003.11.29.</div>
+                        <div>직제개정(역사부 신설 19명, 공주박물관 11명 증원)</div>
+                    </li>
+                    <li>
+                        <div class="number">2004.05.14.</div>
+                        <div>국립공주박물관 이전 개관(현 박물관)</div>
+                    </li>
+                    <li>
+                        <div class="number">2004.10.17.</div>
+                        <div>국립중앙박물관 용산 이전을 위한 임시 휴관</div>
+                    </li>
+                    <li>
+                        <div class="number">2004.11.18.</div>
+                        <div>직제개정(박물관 정책과 신설)</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box6">
+            <div class="box6_6">
+                <h4>2000년대</h4>
+                <ul>
+                    <li>
+                        <div class="number">2005.08.16.</div>
+                        <div>직제개정(교육문화교류단 신설 등 25명 증원)</div>
+                    </li>
+                    <li>
+                        <div class="number">2005.10.28.</div>
+                        <div>새 국립중앙박물관 신축 이전 개관(용산)</div>
+                    </li>
+                    <li>
+                        <div class="number">2006.04.06.</div>
+                        <div>직제개정(고객지원팀 신설)</div>
+                    </li>
+                    <li>
+                        <div class="number">2007.05.22.</div>
+                        <div>직제개정(아시아부ㆍ보존과학팀 신설, 교육홍보팀을<br>교육팀과 국제교류홍보팀으로 분리신설,<br>소속박물관 관리과를 기획운영과로 변경)</div>
+                    </li>
+                    <li>
+                        <div class="number">2008.03.06.</div>
+                        <div>직제개정(박물관정책과를 기획총괄과로 변경)</div>
+                    </li>
+                    <li>
+                        <div class="number">2010.02.11.</div>
+                        <div>직제개정(어린이박물관팀 신설, 사업기획팀과 <br>국제교류홍보팀을 사업기획과와 국제교류홍보과로 변경)
+                        </div>
+                    </li>
+                    <li>
+                        <div class="number">2010.12.09.</div>
+                        <div>직제개정(연구기획부 신설, 고고부와 역사부를 통합하여<br>고고역사부 신설, 사업기획과. 전시팀. <br>교육팀을 문화사업과. 전시과. 교육과로 변경)</div>
+                    </li>
+                </ul>
+                <h4>2010~2020년대</h4>
+                <ul>
+                    <li>
+                        <div class="number">2012.09.07.</div>
+                        <div>직제개정(문화사업과와 국제교류홍보과를 <br>통합하여 문화교류홍보과 신설)</div>
+                    </li>
+                    <li>
+                        <div class="number">2013.09.12.</div>
+                        <div>직제개정(디자인팀 신설)</div>
+                    </li>
+                    <li>
+                        <div class="number">2013.11.22.</div>
+                        <div>국립나주박물관 개관</div>
+                    </li>
+                    <li>
+                        <div class="number">2015.07.20.</div>
+                        <div>직제개정(어린이박물관팀을 어린이박물관과로 변경)</div>
+                    </li>
+                    <li>
+                        <div class="number">2015.12.30.</div>
+                        <div>직제개정(미륵사지유물전시관 신설)</div>
+                    </li>
+                    <li>
+                        <div class="number">2019.02.26.</div>
+                        <div>직제개정(미륵사지유물전시관을 익산박물관으로 개편)</div>
+                    </li>
+                    <li>
+                        <div class="number">2019.05.07.</div>
+                        <div>직제개정(기획총괄과와 연구기획부를 폐지하고 <br>미래전략담당관과 박물관정보화과를 신설,<br>기획운영단을 행정운영단으로 변경)</div>
+                    </li>
+                    <li>
+                        <div class="number">2020.06.09.</div>
+                        <div>직제개정(관리과, 아시아부를 시설관리과, 세계문화부로 변경)</div>
+                    </li>
+                    <li>
+                        <div class="number">2020.12.22.</div>
+                        <div>직제개정(박물관정보화과를 <br>디지털박물관과로 변경)</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 콘4 -->
+    <div id="content4">
+        <img src="img/intro_con4.jpg">
+    </div>
+<!-- footer -->
+<footer>
+    <a href="index.html"><img src="img/logo_bk.png" /></a>
+    <p>우)04383 서울특별시 용산구 서빙고로 137(용산동6가 168-6)</p>
+    <div class="tel">
+        <p><srong>TEL.</srong>02-2077-9000</p>
+        <ul class="sns">
+            <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-blog"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-regular fa-comment"></i></a>
+            </li>
+        </ul>
+    </div>
+    <ul class="pri">
+        <li>
+            <strong>개인정보처리방침</strong>
+            <span>전자우편주소 수집거부 |</span>
+            <span>영상정보처리기기 운영관리방침 |</span>
+            <span>공공누리 |</span>
+            <span>청렴투명신고 |</span>
+            <span>정보공개</span>
+        </li>
+        <li>
+            <p>@ COPYRIGHT <small> All Rights Reserved.</small></p>
+        </li>
+    </ul>
+</footer>
+</body>
+</html>

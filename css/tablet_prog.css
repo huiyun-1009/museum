@@ -1,0 +1,262 @@
+@media all and (min-width: 800px) and (max-width: 1200px) {
+  /* visual1 */
+  #visual1 {
+    font-family: "국립박물관문화재단클래식B";
+    width: 100%;
+    height: 400px;
+    margin-top:70px;
+    background-image: url(../img/common_visual.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    font-family: "국립박물관문화재단클래식B";
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 400px;
+    margin-bottom: 100px;
+  }
+
+  /* visual2 */
+  #visual2 {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../img/prog_con1_bgimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+  }
+  .visual2pic {
+    width: 43%;
+    min-width: 470px;
+    margin: 8% 0px 0px 13%;
+  }
+  #visual2 h2 {
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+    position: absolute;
+    top: 150px;
+    left: 55%;
+  }
+  .visual2txt {
+    width: 500px;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+  }
+  /* container */
+
+  /* con1 */
+  .con1 {
+    width: 700px;
+    margin: 8% auto;
+    margin-bottom: 17%;
+    position: relative;
+  }
+  .con1 ul {
+    width: 700px;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .con1on {
+    position: absolute;
+    top: 12%;
+    left: -15px;
+  }
+  .con1on li {
+    opacity: 0;
+  }
+  .con1on li:hover {
+    opacity: 1;
+  }
+  .con1 img {
+    width: 160px;
+  }
+  .recommand {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .recommand p {
+    font-size: 12px;
+  }
+  .con1 h3 {
+    text-align: center;
+    margin-top: 3%;
+  }
+  /* con2 */
+  .con2 {
+    width: 100%;
+    height: 480px;
+    background-color: #5e605f;
+    margin-bottom: 150px;
+    background-image: url(../img/common_back.png);
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: -10% -200px;
+  }
+  .poster {
+    width: 34%;
+    min-width: 290px;
+    max-width: 320px;
+  }
+  .poster1 {
+    position: relative;
+    top: 3%;
+    left: 8%;
+  }
+  .poster2 {
+    position: relative;
+    bottom: 38%;
+    left: 13%;
+  }
+  .con2txt {
+    text-align: right;
+    margin-right: 7%;
+    position: relative;
+    top: 74%;
+    color: white;
+    z-index: 1;
+    cursor:pointer;
+  }
+  .con2txt a {
+    color: white;
+  }
+  .con2txt div {
+    margin-bottom: 1%;
+  }
+  .con2txt h2 {
+    color: white;
+    font-size: 50px;
+  }
+  .allP img {
+    width: 150px;
+  }
+  .wrap {
+    display: none;
+  }
+  .allP {
+    width: 580px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    position: relative;
+    left: 5%;
+    bottom: 80px;
+  }
+  .allp2 {
+    left: -3%;
+  }
+  .seeless {
+    display: none;
+  }
+  .hide {
+    display: none;
+  }
+  /* con3 */
+  .con3 {
+    width: 100%;
+    height: 480px;
+    background-color: #476269;
+    overflow: hidden;
+
+    background-image: url(../img/common_back.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: 690px -250px;
+  }
+  .posterwrap {
+    display: flex;
+    gap: 50px;
+  }
+  .con3 img {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .con3 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+  }
+  .con3poster {
+    position: relative;
+    right: -230%;
+  }
+  .con3poster1 {
+    top: 70px;
+  }
+  .con3poster2 {
+    bottom: 200px;
+    display: none;
+  }
+  .con3txt {
+    position: relative;
+    left: 60px;
+    bottom: 520px;
+  }
+  .con3txt h2 {
+    font-size: 40px;
+    color: white;
+  }
+  .con3txt p {
+    font-size: 14px;
+    color: #aaa;
+    font-weight: 900;
+    margin-top: 30px;
+  }
+  /* con4 */
+  .con4 {
+    width: 750px;
+    margin: 100px auto;
+
+    display: flex;
+  }
+  .con4 h2 {
+    font-size: 45px;
+    color: #476269;
+  }
+  .con4 p {
+    font-size: 12px;
+    margin-top: 3%;
+    color: #444;
+    padding-right: 14%;
+  }
+  .nottext {
+    display: flex;
+    gap: 7%;
+    margin-top: 3%;
+    font-size: 14px;
+  }
+  .nottext li {
+    margin-top: 2%;
+    padding: 1% 0px;
+  }
+  .nottext li:nth-child(2) {
+    width: 390px;
+  }
+  .nottext li:nth-child(2):hover {
+    background-color: #ddd;
+  }
+  .type {
+    width: 56px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    padding: 2px 14px;
+  }
+  .typeN {
+    background-color: #476269;
+  }
+  .typeL {
+    background-color: #476958;
+  }
+  .typeP {
+    background-color: #564769;
+  }
+}
